@@ -2,7 +2,7 @@ import React from 'react';
 
 const Movie = () => {
     return (
-        <section>Movie</section>
+        <section className='movie'>Movie</section>
     );
 };
 
