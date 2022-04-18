@@ -2,7 +2,7 @@ import React from 'react';
 
 const Show = () => {
     return (
-        <section>Show</section>
+        <section className='show'>Show</section>
     );
 };
 
