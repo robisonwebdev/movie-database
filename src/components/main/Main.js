@@ -4,7 +4,11 @@ import '../../styles/main/Main.css';
 
 const Main = () => {
     return (
-        <Routes></Routes>
+        <Routes>
+            <Route path='/' element={<Layout />}>
+
+            </Route>
+        </Routes>
     );
 };
 
