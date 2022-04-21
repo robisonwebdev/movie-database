@@ -8,4 +8,12 @@ const Main = () => {
     );
 };
 
+const Layout = () => {
+    return (
+        <main>
+            <Outlet />
+        </main>
+    );
+};
+
 export default Main;
