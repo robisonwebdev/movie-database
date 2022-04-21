@@ -4,7 +4,7 @@ import '../../styles/main/Main.css';
 
 const Main = () => {
     return (
-        <main>Main</main>
+        <Routes></Routes>
     );
 };
 
