@@ -10,7 +10,10 @@ const Main = () => {
     return (
         <Routes>
             <Route path='/' element={<Layout />}>
-
+                <Route index element={<Home />} />
+                <Route path='movie' element={<Movie />} />
+                <Route path='show' element={<Show />} />
+                <Route path='*' element={<Error />} />
             </Route>
         </Routes>
     );
