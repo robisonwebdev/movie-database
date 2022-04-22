@@ -3,7 +3,7 @@ import '../../../styles/main/people/Person.css';
 
 const Person = () => {
     return (
-        <section>Person</section>
+        <section className='person'>Person</section>
     );
 };
 
