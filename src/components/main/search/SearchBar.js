@@ -3,7 +3,7 @@ import '../../../styles/main/search/SearchBar.css';
 
 const SearchBar = () => {
     return (
-        <section>SearchBar</section>
+        <section className='search_bar'>SearchBar</section>
     );
 };
 
