@@ -2,7 +2,7 @@ import React from 'react';
 
 const PersonalInformation = () => {
     return (
-        <section>PersonalInformation</section>
+        <section className='personal_information'>PersonalInformation</section>
     );
 };
 
