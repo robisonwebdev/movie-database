@@ -2,7 +2,7 @@ import React from 'react';
 
 const Biography = () => {
     return (
-        <section>Biography</section>
+        <section className='biography'>Biography</section>
     );
 };
 
