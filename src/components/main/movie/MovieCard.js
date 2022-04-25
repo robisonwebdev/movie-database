@@ -2,7 +2,7 @@ import React from 'react';
 
 const MovieCard = () => {
     return (
-        <section>MovieCard</section>
+        <section className='movie_card'>MovieCard</section>
     );
 };
 
