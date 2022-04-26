@@ -1,4 +1,5 @@
 import React from 'react';
+import '../../styles/header/NavigationLogo.css';
 
 const NavigationLogo = () => {
     return (
