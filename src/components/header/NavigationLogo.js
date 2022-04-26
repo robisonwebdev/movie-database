@@ -2,7 +2,7 @@ import React from 'react';
 
 const NavigationLogo = () => {
     return (
-        <h1>NavigationLogo</h1>
+        <h1 className='navigation_logo'>NavigationLogo</h1>
     );
 };
 
