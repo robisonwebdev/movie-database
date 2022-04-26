@@ -3,7 +3,7 @@ import '../../../styles/main/search/MediaCard.css';
 
 const MediaCard = () => {
     return (
-        <section>MediaCard</section>
+        <section className='media_card'>MediaCard</section>
     );
 };
 
