@@ -1,4 +1,5 @@
 import React from 'react';
+import '../../styles/header/MobileNavigation.css';
 
 const MobileNavigation = () => {
     return (
