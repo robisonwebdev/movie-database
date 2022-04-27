@@ -1,4 +1,5 @@
 import React from 'react';
+import '../../styles/header/DesktopNavigation.css';
 
 const DesktopNavigation = () => {
     return (
