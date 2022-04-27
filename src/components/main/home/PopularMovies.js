@@ -2,7 +2,7 @@ import React from 'react';
 
 const PopularMovies = () => {
     return (
-        <section>PopularMovies</section>
+        <section className='popular_movies'>PopularMovies</section>
     );
 };
 
