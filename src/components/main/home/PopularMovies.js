@@ -1,4 +1,5 @@
 import React from 'react';
+import '../../../styles/main/home/PopularMovies.css';
 
 const PopularMovies = () => {
     return (
