@@ -2,7 +2,7 @@ import React from 'react';
 
 const MobileNavigation = () => {
     return (
-        <nav>MobileNavigation</nav>
+        <nav className='mobile_navigation'>MobileNavigation</nav>
     );
 };
 
