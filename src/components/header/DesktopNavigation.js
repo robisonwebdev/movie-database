@@ -2,7 +2,7 @@ import React from 'react';
 
 const DesktopNavigation = () => {
     return (
-        <nav>DesktopNavigation</nav>
+        <nav className='desktop_navigation'>DesktopNavigation</nav>
     );
 };
 
