@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import DesktopNavigation from './DesktopNavigation';
+import MobileNavigation from './MobileNavigation';
 import '../../styles/header/Header.css';
 
 const Header = () => {
@@ -16,7 +18,9 @@ const Header = () => {
     }, []);
 
     return (
-        <header>Header</header>
+        <header>
+            {width < breakpoint ? <MobileNavigation /> : <DesktopNavigation />}
+        </header>
     );
 };
 
