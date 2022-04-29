@@ -1,4 +1,5 @@
 import React from 'react';
+import '../../styles/header/NavigationLink.css';
 
 const NavigationLink = () => {
     return (
