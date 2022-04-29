@@ -2,7 +2,7 @@ import React from 'react';
 
 const NavigationLink = () => {
     return (
-        <div>NavigationLink</div>
+        <div className='navigation_link'>NavigationLink</div>
     );
 };
 
