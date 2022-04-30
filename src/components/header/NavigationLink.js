@@ -4,7 +4,9 @@ import '../../styles/header/NavigationLink.css';
 
 const NavigationLink = ({ linkTo, title }) => {
     return (
-        <Link className='navigation_link'></Link>
+        <Link className='navigation_link' to={linkTo}>
+            <li>{title}</li>
+        </Link>
     );
 };
 
