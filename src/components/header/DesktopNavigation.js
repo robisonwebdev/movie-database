@@ -4,7 +4,13 @@ import '../../styles/header/DesktopNavigation.css';
 
 const DesktopNavigation = () => {
     return (
-        <nav className='desktop_navigation'>DesktopNavigation</nav>
+        <nav className='desktop_navigation'>
+            <ul>
+                <NavigationLink linkTo='' title='Movies' />
+                <NavigationLink linkTo='' title='TV Shows' />
+                <NavigationLink linkTo='' title='People' />
+            </ul>
+        </nav>
     );
 };
 
