@@ -1,8 +1,9 @@
 import React from 'react';
+import '../../../styles/main/movies/Movies.css';
 
 const Movies = () => {
     return (
-        <section>Movies</section>
+        <section className='movies'>Movies</section>
     );
 };
 
