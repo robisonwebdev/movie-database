@@ -1,8 +1,9 @@
 import React from 'react';
+import '../../../styles/main/people/People.css';
 
 const People = () => {
     return (
-        <section>People</section>
+        <section className='people'>People</section>
     );
 };
 
