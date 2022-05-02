@@ -4,9 +4,10 @@ import Error from './error/Error';
 import Home from './home/Home';
 import Movie from './movie/Movie';
 import Movies from './movies/Movies';
-import Person from './people/Person';
+import People from './people/People';
+import Person from './person/Person';
 import Results from './search/Results';
-import Show from './show/Show';
+import TVShows from  './tvShows/TVShows';
 import '../../styles/main/Main.css';
 
 const Main = () => {
@@ -15,9 +16,9 @@ const Main = () => {
             <Route path='/' element={<Layout />}>
                 <Route index element={<Home />} />
                 <Route path='movies' element={<Movies />} />
-                <Route path='person' element={<Person />} />
+                <Route path='people' element={<People />} />
                 <Route path='results' element={<Results />} />
-                <Route path='show' element={<Show />} />
+                <Route path='tvShows' element={<TVShows />} />
                 <Route path='*' element={<Error />} />
             </Route>
 
