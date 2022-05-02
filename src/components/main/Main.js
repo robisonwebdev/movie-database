@@ -25,6 +25,10 @@ const Main = () => {
             <Route path='/movie' element={<Layout />}>
                 <Route path=':movieID' element={<Movie />} />
             </Route>
+
+            <Route path='/person' element={<Layout />}>
+                <Route path=':personID' element={<Person />} />
+            </Route>
         </Routes>
     );
 };
