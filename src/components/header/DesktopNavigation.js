@@ -6,9 +6,9 @@ const DesktopNavigation = () => {
     return (
         <nav className='desktop_navigation'>
             <ul>
-                <NavigationLink linkTo='' title='Movies' />
-                <NavigationLink linkTo='' title='TV Shows' />
-                <NavigationLink linkTo='' title='People' />
+                <NavigationLink linkTo='movies' title='Movies' />
+                <NavigationLink linkTo='tvShows' title='TV Shows' />
+                <NavigationLink linkTo='people' title='People' />
             </ul>
         </nav>
     );
