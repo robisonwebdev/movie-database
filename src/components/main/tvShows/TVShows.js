@@ -2,7 +2,7 @@ import React from 'react';
 
 const TVShows = () => {
     return (
-        <section>TVShows</section>
+        <section className='tv_shows'>TVShows</section>
     );
 };
 
