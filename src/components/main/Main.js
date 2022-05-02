@@ -7,6 +7,7 @@ import Movies from './movies/Movies';
 import People from './people/People';
 import Person from './person/Person';
 import Results from './search/Results';
+import Show from './show/Show';
 import TVShows from  './tvShows/TVShows';
 import '../../styles/main/Main.css';
 
@@ -28,6 +29,10 @@ const Main = () => {
 
             <Route path='/person' element={<Layout />}>
                 <Route path=':personID' element={<Person />} />
+            </Route>
+
+            <Route path='/show' element={<Layout />}>
+                <Route path=':showID' element={<Show />} />
             </Route>
         </Routes>
     );
