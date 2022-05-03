@@ -6,6 +6,7 @@ import '../../styles/header/DesktopNavigation.css';
 const DesktopNavigation = () => {
     return (
         <nav className='desktop_navigation'>
+            <NavigationLogo />
             <ul>
                 <NavigationLink linkTo='movies' title='Movies' />
                 <NavigationLink linkTo='tvShows' title='TV Shows' />
