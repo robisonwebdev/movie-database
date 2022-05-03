@@ -2,7 +2,7 @@ import React from 'react';
 
 const MobileLinks = () => {
     return (
-        <div>MobileLinks</div>
+        <div className='mobile_links'>MobileLinks</div>
     );
 };
 
