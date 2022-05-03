@@ -1,5 +1,6 @@
 import React from 'react';
 import NavigationLink from './NavigationLink';
+import NavigationLogo from './NavigationLogo';
 import '../../styles/header/DesktopNavigation.css';
 
 const DesktopNavigation = () => {
