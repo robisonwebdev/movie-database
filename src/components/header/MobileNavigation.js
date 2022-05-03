@@ -6,13 +6,13 @@ import NavigationLogo from './NavigationLogo';
 import '../../styles/header/MobileNavigation.css';
 
 const MobileNavigation = () => {
-    const {menuActive, setMenuActive} = useState(false);
+    const [menuActive, setMenuActive] = useState(true);
 
     return (
         <nav className='mobile_navigation'>
             <div className='mobile_header'>
                 <NavigationLogo />
-                <MenuIcon />
+                {menuActive ? <CloseIcon /> : <MenuIcon />}
             </div>
             <div className='mobile_links'></div>
         </nav>
