@@ -4,7 +4,11 @@ import '../../styles/header/NavigationLogo.css';
 
 const NavigationLogo = () => {
     return (
-        <h1 className='navigation_logo'>NavigationLogo</h1>
+        <h1 className='navigation_logo'>
+            <Link to='/'>
+                NavigationLogo
+            </Link>
+        </h1>
     );
 };
 
