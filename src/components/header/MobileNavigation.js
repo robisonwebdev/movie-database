@@ -4,7 +4,10 @@ import '../../styles/header/MobileNavigation.css';
 
 const MobileNavigation = () => {
     return (
-        <nav className='mobile_navigation'>MobileNavigation</nav>
+        <nav className='mobile_navigation'>
+            <div className='mobile_header'></div>
+            <div className='mobile_links'></div>
+        </nav>
     );
 };
 
