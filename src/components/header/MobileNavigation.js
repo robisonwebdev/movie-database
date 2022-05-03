@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import CloseIcon from '@mui/icons-material/Close';
 import MenuIcon from '@mui/icons-material/Menu';
-import NavigationLink from './NavigationLink';
+import MobileLinks from './MobileLinks';
 import NavigationLogo from './NavigationLogo';
 import '../../styles/header/MobileNavigation.css';
 
@@ -14,7 +14,7 @@ const MobileNavigation = () => {
                 <NavigationLogo />
                 {menuActive ? <CloseIcon onClick={() => setMenuActive(false)} /> : <MenuIcon onClick={() => setMenuActive(true)} />}
             </div>
-            <div className='mobile_links'></div>
+            {menuActive ? <MobileLinks /> : null}
         </nav>
     );
 };
