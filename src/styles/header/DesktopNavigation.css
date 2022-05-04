@@ -6,3 +6,12 @@
     height: auto;
     width: 100%;
 }
+
+.desktop_navigation ul {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+
+    height: auto;
+    width: auto;
+}
