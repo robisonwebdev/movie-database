@@ -1,0 +1,8 @@
+.desktop_navigation {
+    display: flex;
+    justify-content: space-between;
+
+    padding: 10px;
+    height: auto;
+    width: 100%;
+}
