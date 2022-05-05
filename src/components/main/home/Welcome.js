@@ -3,7 +3,7 @@ import '../../../styles/main/home/Welcome.css';
 
 const Welcome = () => {
     return (
-        <section>Welcome</section>
+        <section className='welcome'>Welcome</section>
     );
 };
 
