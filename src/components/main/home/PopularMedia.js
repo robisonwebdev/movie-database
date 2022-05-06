@@ -1,10 +1,10 @@
 import React from 'react';
-import '../../../styles/main/home/PopularMovies.css';
+import '../../../styles/main/home/PopularMedia.css';
 
-const PopularMovies = () => {
+const PopularMedia = () => {
     return (
-        <section className='popular_movies'>PopularMovies</section>
+        <section className='popular_media'>PopularMedia</section>
     );
 };
 
-export default PopularMovies;
+export default PopularMedia;
