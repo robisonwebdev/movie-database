@@ -3,7 +3,7 @@ import '../../../styles/main/home/ComingSoon.css';
 
 const ComingSoon = () => {
     return (
-        <section>ComingSoon</section>
+        <section className='coming_soon'>ComingSoon</section>
     );
 };
 
