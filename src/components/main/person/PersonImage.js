@@ -2,7 +2,7 @@ import React from 'react';
 
 const PersonImage = () => {
     return (
-        <img>PersonImage</img>
+        <img className='person_image'>PersonImage</img>
     );
 };
 
