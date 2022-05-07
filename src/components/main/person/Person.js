@@ -6,7 +6,10 @@ const Person = () => {
     const { personID } = useParams();
 
     return (
-        <section className='person'>Person</section>
+        <section className='person'>
+            <section className='person_left_section'></section>
+            <section className='person_right_section'></section>
+        </section>
     );
 };
 
