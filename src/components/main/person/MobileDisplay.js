@@ -2,7 +2,7 @@ import React from 'react';
 
 const MobileDisplay = () => {
     return (
-        <section>MobileDisplay</section>
+        <section className='person_mobile'>MobileDisplay</section>
     );
 };
 
