@@ -1,9 +1,9 @@
 import React from 'react';
 
-const MobileDisplay = () => {
+const PersonMobile = () => {
     return (
-        <section className='person_mobile'>MobileDisplay</section>
+        <section className='person_mobile'>PersonMobile</section>
     );
 };
 
-export default MobileDisplay;
+export default PersonMobile;
