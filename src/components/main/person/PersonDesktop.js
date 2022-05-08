@@ -2,7 +2,7 @@ import React from 'react';
 
 const PersonDesktop = () => {
     return (
-        <section>PersonDesktop</section>
+        <section className='person_desktop'>PersonDesktop</section>
     );
 };
 
