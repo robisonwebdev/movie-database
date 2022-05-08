@@ -1,4 +1,5 @@
 import React from 'react';
+import '../../../styles/main/person/PersonDesktop.css';
 
 const PersonDesktop = () => {
     return (
