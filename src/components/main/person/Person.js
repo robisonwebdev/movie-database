@@ -5,7 +5,10 @@ import PersonImage from './PersonImage';
 import '../../../styles/main/person/Person.css';
 
 const Person = () => {
+    const [width, setWidth] = useState(window.innerWidth);
     const { personID } = useParams();
+    const breakpoint = 600;
+
 
     return (
         <section className='person'>
