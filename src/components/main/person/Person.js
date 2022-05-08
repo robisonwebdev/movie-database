@@ -21,7 +21,7 @@ const Person = () => {
 
     return (
         <section className='person'>
-            
+            {width < breakpoint ? <PersonMobile /> : <PersonDesktop />}
         </section>
     );
 };
