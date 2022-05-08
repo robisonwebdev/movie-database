@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import PersonalInformation from './PersonalInformation';
 import PersonImage from './PersonImage';
@@ -13,7 +13,7 @@ const Person = () => {
                 <PersonImage />
                 <PersonalInformation />
             </section>
-            <section className='person_right_section'></section>
+            <section className='person_right_section'>Right Section</section>
         </section>
     );
 };
