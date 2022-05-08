@@ -9,11 +9,19 @@ const Person = () => {
     const { personID } = useParams();
     const breakpoint = 600;
 
+    useEffect(() => {
+        const handleWindowResize = () => {
+            setWidth(window.innerWidth);
+        };
+
+        window.addEventListener('resize', handleWindowResize);
+
+        return () => window.removeEventListener('resize', handleWindowResize);
+    }, []);
 
     return (
         <section className='person'>
-            <section className='person_left_section'>Left Section</section>
-            <section className='person_right_section'>Right Section</section>
+            
         </section>
     );
 };
