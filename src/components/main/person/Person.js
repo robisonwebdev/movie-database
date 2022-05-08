@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
-import PersonalInformation from './PersonalInformation';
-import PersonImage from './PersonImage';
+import PersonDesktop from './PersonDesktop';
+import PersonMobile from './PersonMobile';
 import '../../../styles/main/person/Person.css';
 
 const Person = () => {
@@ -12,10 +12,7 @@ const Person = () => {
 
     return (
         <section className='person'>
-            <section className='person_left_section'>
-                <PersonImage />
-                <PersonalInformation />
-            </section>
+            <section className='person_left_section'>Left Section</section>
             <section className='person_right_section'>Right Section</section>
         </section>
     );
