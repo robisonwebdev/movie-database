@@ -2,10 +2,10 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import '../../styles/header/NavigationLogo.css';
 
-const NavigationLogo = () => {
+const NavigationLogo = ({ onClick }) => {
     return (
         <h1 className='navigation_logo'>
-            <Link to='/'>
+            <Link onClick={() => onClick(false)} to='/'>
                 NavigationLogo
             </Link>
         </h1>
