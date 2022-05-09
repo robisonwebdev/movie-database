@@ -11,7 +11,7 @@ const MobileNavigation = () => {
     return (
         <nav className='mobile_navigation'>
             <div className='mobile_header'>
-                <NavigationLogo />
+                <NavigationLogo onClick={setMenuActive} />
                 {menuActive ? <CloseIcon onClick={() => setMenuActive(false)} /> : <MenuIcon onClick={() => setMenuActive(true)} />}
             </div>
             {menuActive ? <MobileLinks onClick={setMenuActive} /> : null}
