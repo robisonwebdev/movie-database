@@ -2,13 +2,13 @@ import React from 'react';
 import NavigationLink from './NavigationLink';
 import '../../styles/header/MobileLinks.css';
 
-const MobileLinks = () => {
+const MobileLinks = ({ onClick }) => {
     return (
         <div className='mobile_links'>
             <ul>
-                <NavigationLink linkTo='movies' title='Movies' />
-                <NavigationLink linkTo='tvShows' title='TV Shows' />
-                <NavigationLink linkTo='people' title='People' />
+                <NavigationLink linkTo='movies' onClick={onClick} title='Movies' />
+                <NavigationLink linkTo='tvShows' onClick={onClick} title='TV Shows' />
+                <NavigationLink linkTo='people' onClick={onClick} title='People' />
             </ul>
         </div>
     );
