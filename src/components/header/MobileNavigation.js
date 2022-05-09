@@ -14,7 +14,7 @@ const MobileNavigation = () => {
                 <NavigationLogo />
                 {menuActive ? <CloseIcon onClick={() => setMenuActive(false)} /> : <MenuIcon onClick={() => setMenuActive(true)} />}
             </div>
-            {menuActive ? <MobileLinks /> : null}
+            {menuActive ? <MobileLinks onClick={setMenuActive} /> : null}
         </nav>
     );
 };
