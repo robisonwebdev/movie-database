@@ -7,6 +7,7 @@ const PersonMobile = () => {
     return (
         <section className='person_mobile'>
             <PersonImage />
+            <h1>PersonName</h1>
             <Biography />
         </section>
     );
