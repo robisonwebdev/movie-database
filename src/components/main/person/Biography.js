@@ -1,9 +1,11 @@
 import React from 'react';
 import '../../../styles/main/person/Biography.css';
 
-const Biography = () => {
+const Biography = ({ biography }) => {
     return (
-        <section className='biography'>Biography</section>
+        <section className='biography'>
+            <p>{biography}</p>
+        </section>
     );
 };
 
