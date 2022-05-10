@@ -1,10 +1,12 @@
 import React from 'react';
 import '../../../styles/main/person/PersonImage.css';
 
-const PersonImage = () => {
+const PersonImage = ({ name, path }) => {
+    const imageSrc = `https://www.themoviedb.org/t/p/w600_and_h900_bestv2${path}`;
+
     return (
         <>
-            <img className='person_image' src='https://images.unsplash.com/photo-1555952517-2e8e729e0b44?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjd8fHBlcnNvbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60'/>
+            <img className='person_image' src={imageSrc} alt={name} />
         </>
     );
 };
