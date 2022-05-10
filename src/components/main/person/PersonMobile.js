@@ -4,11 +4,11 @@ import PersonImage from './PersonImage';
 import '../../../styles/main/person/PersonMobile.css';
 
 const PersonMobile = ({ personInformation }) => {
-    const { biography, name } = personInformation;
+    const { biography, imagePath, name } = personInformation;
 
     return (
         <section className='person_mobile'>
-            <PersonImage />
+            <PersonImage name={name} path={imagePath} />
             <h1>{name}</h1>
             <Biography biography={biography} />
         </section>
