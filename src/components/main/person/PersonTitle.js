@@ -1,8 +1,13 @@
 import React from 'react';
 
-const PersonTitle = () => {
+const PersonTitle = ({ personInformation }) => {
+    const { birthday, deathday, name } = personInformation;
+
     return (
-        <div>PersonTitle</div>
+        <div>
+            <h1>{name}</h1>
+            <p></p>
+        </div>
     );
 };
 
