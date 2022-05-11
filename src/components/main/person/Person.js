@@ -23,6 +23,8 @@ const Person = () => {
             setPersonInformation(info => ({
                 ...info,
                 biography: res.data.biography,
+                birthday: res.data.birthday,
+                deathday: res.data.deathday,
                 imagePath: res.data.profile_path,
                 name: res.data.name
             }));
