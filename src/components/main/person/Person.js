@@ -13,23 +13,33 @@ const Person = () => {
     const breakpoint = 600;
 
     const fetchData = useCallback(() => {
-        const person_API = `https://api.themoviedb.org/3/person/${personID}?api_key=9289aca3a6413b200619b263ac82e4c0&language=en-US`;
+        const details_API = `https://api.themoviedb.org/3/person/${personID}?api_key=9289aca3a6413b200619b263ac82e4c0&language=en-US`;
+        const socialMedia_API = `https://api.themoviedb.org/3/person/${personID}/external_ids?api_key=9289aca3a6413b200619b263ac82e4c0&language=en-US`;
+
+        const getDetails = axios.get(details_API);
+        const getSocialMedia = axios.get(socialMedia_API);
 
         setLoading(true);
 
         axios
-        .get(person_API)
-        .then(res => {
+        .all([getDetails, getSocialMedia])
+        .then(axios.spread((...all_Data) => {
+            const details_Data = all_Data[0].data;
+            const socialMedia_Data = all_Data[1].data;
+
             setPersonInformation(info => ({
                 ...info,
-                biography: res.data.biography,
-                birthday: res.data.birthday,
-                deathday: res.data.deathday,
-                imagePath: res.data.profile_path,
-                name: res.data.name
+                biography: details_Data.biography,
+                birthday: details_Data.birthday,
+                deathday: details_Data.deathday,
+                facebook: socialMedia_Data.facebook_id,
+                imagePath: details_Data.profile_path,
+                instagram: socialMedia_Data.instagram_id,
+                name: details_Data.name,
+                twitter: socialMedia_Data.twitter_id
             }));
             setLoading(false);
-        })
+        }))
         .catch(err => console.log(err))
 
     }, [personID]);
