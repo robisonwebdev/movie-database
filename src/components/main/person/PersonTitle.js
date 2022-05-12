@@ -1,12 +1,13 @@
 import React from 'react';
+import PersonSocialMedia from './PersonSocialMedia';
 
 const PersonTitle = ({ personInformation }) => {
-    const { birthday, deathday, name } = personInformation;
+    const { name } = personInformation;
 
     return (
         <div>
             <h1>{name}</h1>
-            <p></p>
+            <PersonSocialMedia socialMedia={personInformation} />
         </div>
     );
 };
