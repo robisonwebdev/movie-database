@@ -3,7 +3,11 @@
     justify-content: center;
     gap: 10px;
 
-    list-style: none;
+    list-style-type: none;
     height: auto;
     width: 100%;
+}
+
+.person_social_media li a {
+    color: #000;
 }
