@@ -6,7 +6,7 @@ const PersonTitle = ({ personInformation }) => {
     const { name } = personInformation;
 
     return (
-        <div>
+        <div className='person_title'>
             <h1>{name}</h1>
             <PersonSocialMedia socialMedia={personInformation} />
         </div>
