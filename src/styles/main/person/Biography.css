@@ -7,3 +7,7 @@
     height: auto;
     width: 100%;
 }
+
+.biography p {
+    text-align: justify;
+}
