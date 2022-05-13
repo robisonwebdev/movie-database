@@ -1,0 +1,9 @@
+.biography {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+
+    height: auto;
+    width: 100%;
+}
