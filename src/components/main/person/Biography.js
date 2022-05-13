@@ -4,6 +4,7 @@ import '../../../styles/main/person/Biography.css';
 const Biography = ({ biography }) => {
     return (
         <section className='biography'>
+            <h2>Biography</h2>
             <p>{biography}</p>
         </section>
     );
