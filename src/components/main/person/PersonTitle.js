@@ -1,5 +1,6 @@
 import React from 'react';
 import PersonSocialMedia from './PersonSocialMedia';
+import '../../../styles/main/person/PersonTitle.css';
 
 const PersonTitle = ({ personInformation }) => {
     const { name } = personInformation;
