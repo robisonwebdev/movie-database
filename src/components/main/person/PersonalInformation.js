@@ -5,7 +5,9 @@ const PersonalInformation = ({ personalInformation }) => {
     const { birthday, birthPlace, deathday, gender, knownFor } = personalInformation;
 
     return (
-        <section className='personal_information'>PersonalInformation</section>
+        <section className='personal_information'>
+            <h2>Personal Information</h2>
+        </section>
     );
 };
 
