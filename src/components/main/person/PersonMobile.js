@@ -13,7 +13,7 @@ const PersonMobile = ({ personInformation }) => {
             <PersonImage name={name} path={imagePath} />
             <PersonTitle personInformation={personInformation} />
             <Biography biography={biography} />
-            <PersonalInformation />
+            <PersonalInformation personalInformation={personInformation} />
         </section>
     );
 };
