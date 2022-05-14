@@ -1,6 +1,7 @@
 import React from 'react';
 import Biography from './Biography';
 import PersonImage from './PersonImage';
+import PersonalInformation from './PersonalInformation';
 import PersonTitle from './PersonTitle';
 import '../../../styles/main/person/PersonMobile.css';
 
@@ -12,6 +13,7 @@ const PersonMobile = ({ personInformation }) => {
             <PersonImage name={name} path={imagePath} />
             <PersonTitle personInformation={personInformation} />
             <Biography biography={biography} />
+            <PersonalInformation />
         </section>
     );
 };
