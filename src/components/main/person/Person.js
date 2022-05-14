@@ -31,6 +31,7 @@ const Person = () => {
                 ...info,
                 biography: details_Data.biography,
                 birthday: details_Data.birthday,
+                birthPlace: details_Data.place_of_birth,
                 deathday: details_Data.deathday,
                 facebook: socialMedia_Data.facebook_id,
                 imagePath: details_Data.profile_path,
