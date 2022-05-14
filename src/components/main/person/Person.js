@@ -37,6 +37,7 @@ const Person = () => {
                 gender: details_Data.gender,
                 imagePath: details_Data.profile_path,
                 instagram: socialMedia_Data.instagram_id,
+                knownFor: details_Data.known_for_department,
                 name: details_Data.name,
                 twitter: socialMedia_Data.twitter_id
             }));
