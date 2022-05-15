@@ -3,7 +3,10 @@ import '../../../styles/main/person/PersonDesktop.css';
 
 const PersonDesktop = () => {
     return (
-        <section className='person_desktop'>PersonDesktop</section>
+        <section className='person_desktop'>
+            <section className='left_container'></section>
+            <section className='right_container'></section>
+        </section>
     );
 };
 
