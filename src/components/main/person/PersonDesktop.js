@@ -1,6 +1,7 @@
 import React from 'react';
 import PersonalInformation from './PersonalInformation';
 import PersonImage from './PersonImage';
+import PersonTitle from './PersonTitle';
 import '../../../styles/main/person/PersonDesktop.css';
 
 const PersonDesktop = ({ personInformation }) => {
@@ -12,7 +13,9 @@ const PersonDesktop = ({ personInformation }) => {
                 <PersonImage name={name} path={imagePath} />
                 <PersonalInformation personalInformation={personInformation} />
             </section>
-            <section className='right_container'></section>
+            <section className='right_container'>
+                <PersonTitle personInformation={personInformation} />
+            </section>
         </section>
     );
 };
