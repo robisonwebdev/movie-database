@@ -1,0 +1,8 @@
+.person_desktop {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+
+    height: auto;
+    width: 100%;
+}
