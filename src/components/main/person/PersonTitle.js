@@ -18,9 +18,9 @@ const PersonTitle = ({ personInformation }) => {
     }, []);
 
     return (
-        <div className='person_title'>
+        <div className={width < breakpoint ? 'person_title_mobile' : 'person_title_desktop'}>
             <h1>{name}</h1>
-            <PersonSocialMedia socialMedia={personInformation} />
+            {width < breakpoint ? <PersonSocialMedia socialMedia={personInformation} /> : null}
         </div>
     );
 };
