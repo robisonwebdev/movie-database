@@ -7,3 +7,16 @@
     height: auto;
     width: 100%;
 }
+
+.person_title_desktop {
+    display: flex;
+
+
+    height: auto;
+    width: 100%;
+}
+
+.person_title_desktop h1, .person_title_mobile h1 {
+    font-size: 1.8rem;
+    font-weight: normal;
+}
