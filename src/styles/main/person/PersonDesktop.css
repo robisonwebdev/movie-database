@@ -1,6 +1,7 @@
 .person_desktop {
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 1fr;
     gap: 30px;
 
     height: auto;
