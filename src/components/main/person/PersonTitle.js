@@ -5,7 +5,7 @@ import '../../../styles/main/person/PersonTitle.css';
 const PersonTitle = ({ personInformation }) => {
     const [width, setWidth] = useState(window.innerWidth);
     const { name } = personInformation;
-    const breakpoint = 600;
+    const breakpoint = 865;
 
     useEffect(() => {
         const handleWindowResize = () => {
