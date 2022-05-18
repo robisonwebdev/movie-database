@@ -14,9 +14,9 @@ const Biography = ({ biography }) => {
 
         return () => window.removeEventListener('resize', handleWindowResize);
     }, []);
-    
+
     return (
-        <section className='biography'>
+        <section className={width < breakpoint ? 'biography_mobile' : 'biography_desktop'}>
             <h2>Biography</h2>
             <p>{biography}</p>
         </section>
