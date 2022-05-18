@@ -1,3 +1,12 @@
+.biography_desktop {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    height: auto;
+    width: 100%;
+}
+
 .biography_mobile {
     display: flex;
     flex-direction: column;
