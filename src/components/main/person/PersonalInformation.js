@@ -18,7 +18,7 @@ const PersonalInformation = ({ personalInformation }) => {
 
     return (
         <section className='personal_information'>
-            <h2>Personal Information</h2>
+            <h3>Personal Information</h3>
             {getBirthday()}
             {getDeathday()}
         </section>
@@ -28,7 +28,7 @@ const PersonalInformation = ({ personalInformation }) => {
 const Format = ({ info, title }) => {
     return (
         <div>
-            <h3>{title}</h3>
+            <h4>{title}</h4>
             <p>{info}</p>
         </div>
     );
