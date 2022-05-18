@@ -10,6 +10,12 @@ const PersonalInformation = ({ personalInformation }) => {
         return <Format info={birthday} title='Birthday' />
     };
 
+    const getBirthPlace = () => {
+        if (birthPlace === null) return null;
+
+        return <Format info={birthPlace} title='Place of birth' />
+    };
+
     const getDeathday = () => {
         if (deathday === null) return null;
 
@@ -21,6 +27,7 @@ const PersonalInformation = ({ personalInformation }) => {
             <h3>Personal Information</h3>
             {getBirthday()}
             {getDeathday()}
+            {getBirthPlace()}
         </section>
     );
 };
