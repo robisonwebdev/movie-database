@@ -22,9 +22,25 @@ const PersonalInformation = ({ personalInformation }) => {
         return <Format info={deathday} title='Death' />
     };
 
+    const getGender = () => {
+        switch (gender) {
+            case 0:
+                return <Format info='Unknown' title='Gender' />
+            case 1:
+                return <Format info='Female' title='Gender' />
+            case 2:
+                return <Format info='Male' title='Gender' />
+            case 3:
+                return <Format info='Non-binary' title='Gender' />
+            default:
+                return null;
+        };
+    };
+
     return (
         <section className='personal_information'>
             <h3>Personal Information</h3>
+            {getGender()}
             {getBirthday()}
             {getDeathday()}
             {getBirthPlace()}
