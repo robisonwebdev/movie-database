@@ -1,4 +1,5 @@
 import React from 'react';
+import Biography from './Biography';
 import PersonalInformation from './PersonalInformation';
 import PersonImage from './PersonImage';
 import PersonTitle from './PersonTitle';
@@ -15,6 +16,7 @@ const PersonDesktop = ({ personInformation }) => {
             </section>
             <section className='right_container'>
                 <PersonTitle personInformation={personInformation} />
+                <Biography biography={biography} />
             </section>
         </section>
     );
