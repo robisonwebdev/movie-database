@@ -2,21 +2,17 @@
     display: flex;
     flex-direction: column;
     gap: 15px;
-
-    height: auto;
-    width: 100%;
 }
 
 .biography_mobile {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 15px;
-
-    height: auto;
-    width: 100%;
+    gap: 15px;    
 }
 
-.biography p {
+.biography_desktop, .biography_mobile {
     text-align: justify;
+    height: auto;
+    width: 100%;
 }
