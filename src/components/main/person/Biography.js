@@ -3,7 +3,7 @@ import '../../../styles/main/person/Biography.css';
 
 const Biography = ({ biography }) => {
     const [width, setWidth] = useState(window.innerWidth);
-    const breakpoint = 600;
+    const breakpoint = 865;
 
     useEffect(() => {
         const handleWindowResize = () => {
