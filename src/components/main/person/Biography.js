@@ -1,22 +1,10 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import '../../../styles/main/person/Biography.css';
 
-const Biography = ({ biography }) => {
-    const [width, setWidth] = useState(window.innerWidth);
-    const breakpoint = 865;
-
-    useEffect(() => {
-        const handleWindowResize = () => {
-            setWidth(window.innerWidth);
-        };
-
-        window.addEventListener('resize', handleWindowResize);
-
-        return () => window.removeEventListener('resize', handleWindowResize);
-    }, []);
+const Biography = ({ biography, format }) => {
 
     return (
-        <section className={width < breakpoint ? 'biography_mobile' : 'biography_desktop'}>
+        <section className={format === 'mobile' ? 'biography_mobile' : 'biography_desktop'}>
             <h2>Biography</h2>
             <p>{biography}</p>
         </section>
