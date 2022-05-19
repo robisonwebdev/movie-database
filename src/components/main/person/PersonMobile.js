@@ -10,10 +10,10 @@ const PersonMobile = ({ personInformation }) => {
 
     return (
         <section className='person_mobile'>
-            <PersonImage name={name} path={imagePath} />
-            <PersonTitle personInformation={personInformation} />
-            <Biography biography={biography} />
-            <PersonalInformation personalInformation={personInformation} />
+            <PersonImage format='mobile' name={name} path={imagePath} />
+            <PersonTitle format='mobile' personInformation={personInformation} />
+            <Biography biography={biography} format='mobile' />
+            <PersonalInformation format='mobile' personalInformation={personInformation} />
         </section>
     );
 };
