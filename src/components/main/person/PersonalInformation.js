@@ -37,9 +37,16 @@ const PersonalInformation = ({ personalInformation }) => {
         };
     };
 
+    const getKnownFor = () => {
+        if (knownFor === null) return null;
+
+        return <Format info={knownFor} title='Known For' />
+    };
+
     return (
         <section className='personal_information'>
             <h3>Personal Information</h3>
+            {getKnownFor()}
             {getGender()}
             {getBirthday()}
             {getDeathday()}
