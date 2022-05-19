@@ -12,13 +12,13 @@ const PersonDesktop = ({ personInformation }) => {
     return (
         <section className='person_desktop'>
             <section className='left_container'>
-                <PersonImage name={name} path={imagePath} />
+                <PersonImage format='desktop' name={name} path={imagePath} />
                 <PersonSocialMedia socialMedia={personInformation} />
-                <PersonalInformation personalInformation={personInformation} />
+                <PersonalInformation format='desktop' personalInformation={personInformation} />
             </section>
             <section className='right_container'>
-                <PersonTitle personInformation={personInformation} />
-                <Biography biography={biography} />
+                <PersonTitle format='desktop' personInformation={personInformation} />
+                <Biography biography={biography} format='desktop' />
             </section>
         </section>
     );
