@@ -16,7 +16,7 @@
     width: 100%;
 }
 
-.personal_information_mobile {
+.personal_information_mobile .personal_information_items {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
 
