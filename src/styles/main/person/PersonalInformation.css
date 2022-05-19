@@ -2,6 +2,7 @@
 .personal_information_mobile {
     display: flex;
     flex-direction: column;
+    gap: 10px;
     
     height: auto;
     width: 100%;
@@ -16,10 +17,17 @@
     width: 100%;
 }
 
-.personal_information_mobile .personal_information_items {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+.personal_information_mobile {
+    text-align: center;
+}
 
+.personal_information_mobile .personal_information_items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px 30px;
+
+    text-align: center;
     height: auto;
     width: 100%;
 }
