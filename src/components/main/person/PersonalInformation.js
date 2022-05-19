@@ -1,7 +1,7 @@
 import React from 'react';
 import '../../../styles/main/person/PersonalInformation.css';
 
-const PersonalInformation = ({ personalInformation }) => {
+const PersonalInformation = ({ format, personalInformation }) => {
     const { birthday, birthPlace, deathday, gender, knownFor } = personalInformation;
 
     const getBirthday = () => {
