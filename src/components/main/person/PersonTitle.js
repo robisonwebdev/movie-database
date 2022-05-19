@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import PersonSocialMedia from './PersonSocialMedia';
 import '../../../styles/main/person/PersonTitle.css';
 
-const PersonTitle = ({ personInformation }) => {
+const PersonTitle = ({ format, personInformation }) => {
     const [width, setWidth] = useState(window.innerWidth);
     const { name } = personInformation;
     const breakpoint = 865;
