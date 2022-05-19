@@ -44,7 +44,7 @@ const PersonalInformation = ({ format, personalInformation }) => {
     };
 
     return (
-        <section className='personal_information'>
+        <section className={format === 'mobile' ? 'personal_information_mobile' : 'personal_information_desktop'}>
             <h3>Personal Information</h3>
             {getKnownFor()}
             {getGender()}
