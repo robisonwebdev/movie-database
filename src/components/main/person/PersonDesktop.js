@@ -2,6 +2,7 @@ import React from 'react';
 import Biography from './Biography';
 import PersonalInformation from './PersonalInformation';
 import PersonImage from './PersonImage';
+import PersonKnownFor from './PersonKnownFor';
 import PersonSocialMedia from './PersonSocialMedia';
 import PersonTitle from './PersonTitle';
 import '../../../styles/main/person/PersonDesktop.css';
@@ -19,6 +20,7 @@ const PersonDesktop = ({ personInformation }) => {
             <section className='right_container'>
                 <PersonTitle format='desktop' personInformation={personInformation} />
                 <Biography biography={biography} format='desktop' />
+                <PersonKnownFor />
             </section>
         </section>
     );
