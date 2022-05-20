@@ -13,25 +13,29 @@ const Person = () => {
     const breakpoint = 865;
 
     const fetchData = useCallback(() => {
+        const combinedCredits_API = `https://api.themoviedb.org/3/person/${personID}/combined_credits?api_key=9289aca3a6413b200619b263ac82e4c0&language=en-US`;
         const details_API = `https://api.themoviedb.org/3/person/${personID}?api_key=9289aca3a6413b200619b263ac82e4c0&language=en-US`;
         const socialMedia_API = `https://api.themoviedb.org/3/person/${personID}/external_ids?api_key=9289aca3a6413b200619b263ac82e4c0&language=en-US`;
 
+        const getCombinedCredits = axios.get(combinedCredits_API);
         const getDetails = axios.get(details_API);
         const getSocialMedia = axios.get(socialMedia_API);
 
         setLoading(true);
 
         axios
-        .all([getDetails, getSocialMedia])
+        .all([getCombinedCredits, getDetails, getSocialMedia])
         .then(axios.spread((...all_Data) => {
-            const details_Data = all_Data[0].data;
-            const socialMedia_Data = all_Data[1].data;
+            const combinedCredits_Data = all_Data[0].data
+            const details_Data = all_Data[1].data;
+            const socialMedia_Data = all_Data[2].data;
 
             setPersonInformation(info => ({
                 ...info,
                 biography: details_Data.biography,
                 birthday: details_Data.birthday,
                 birthPlace: details_Data.place_of_birth,
+                combinedCredits: combinedCredits_Data,
                 deathday: details_Data.deathday,
                 facebook: socialMedia_Data.facebook_id,
                 gender: details_Data.gender,
