@@ -2,6 +2,7 @@ import React from 'react';
 import Biography from './Biography';
 import PersonImage from './PersonImage';
 import PersonalInformation from './PersonalInformation';
+import PersonKnownFor from './PersonKnownFor';
 import PersonTitle from './PersonTitle';
 import '../../../styles/main/person/PersonMobile.css';
 
@@ -14,6 +15,7 @@ const PersonMobile = ({ personInformation }) => {
             <PersonTitle format='mobile' personInformation={personInformation} />
             <Biography biography={biography} format='mobile' />
             <PersonalInformation format='mobile' personalInformation={personInformation} />
+            <PersonKnownFor />
         </section>
     );
 };
