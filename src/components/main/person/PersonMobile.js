@@ -7,7 +7,7 @@ import PersonTitle from './PersonTitle';
 import '../../../styles/main/person/PersonMobile.css';
 
 const PersonMobile = ({ personInformation }) => {
-    const { biography, imagePath, name } = personInformation;
+    const { biography, combinedCredits, imagePath, name } = personInformation;
 
     return (
         <section className='person_mobile'>
@@ -15,7 +15,7 @@ const PersonMobile = ({ personInformation }) => {
             <PersonTitle format='mobile' personInformation={personInformation} />
             <Biography biography={biography} format='mobile' />
             <PersonalInformation format='mobile' personalInformation={personInformation} />
-            <PersonKnownFor />
+            <PersonKnownFor credits={combinedCredits} format='mobile' />
         </section>
     );
 };
