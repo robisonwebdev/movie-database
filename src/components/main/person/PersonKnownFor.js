@@ -1,4 +1,5 @@
 import React from 'react';
+import KnownForCard from './KnownForCard';
 import '../../../styles/main/person/PersonKnownFor.css';
 
 const PersonKnownFor = ({ credits, format }) => {
