@@ -65,8 +65,10 @@ const Person = () => {
 
     return (
         <section className='person'>
-            {loading ? null : console.log(personInformation)}
-            {width < breakpoint ? <PersonMobile personInformation={personInformation} /> : <PersonDesktop personInformation={personInformation} />}
+            {loading 
+                ? null
+                : width < breakpoint ? <PersonMobile personInformation={personInformation} /> : <PersonDesktop personInformation={personInformation} />
+            }
         </section>
     );
 };
