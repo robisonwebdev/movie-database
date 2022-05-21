@@ -1,8 +1,9 @@
 import React from 'react';
+import '../../../styles/main/person/KnownForCard.css';
 
 const KnownForCard = () => {
     return (
-        <section>KnownForCard</section>
+        <section className='known_for_card'>KnownForCard</section>
     );
 };
 
