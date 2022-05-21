@@ -15,7 +15,7 @@ const PersonMobile = ({ personInformation }) => {
             <PersonTitle format='mobile' personInformation={personInformation} />
             <Biography biography={biography} format='mobile' />
             <PersonalInformation format='mobile' personalInformation={personInformation} />
-            <PersonKnownFor credits={combinedCredits} format='mobile' />
+            <PersonKnownFor credits={combinedCredits.cast} format='mobile' />
         </section>
     );
 };
