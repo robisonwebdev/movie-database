@@ -1,0 +1,13 @@
+.known_for_card_mobile {
+    display: flex;
+    align-items: center;
+
+    height: auto;
+    width: 100%;
+}
+
+.known_for_card_mobile img {
+    object-fit: contain;
+    height: 100px;
+    width: 100px;
+}
