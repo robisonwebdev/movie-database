@@ -1,0 +1,18 @@
+.person_known_for_mobile {
+    display: flex;
+    flex-direction: column;
+
+    height: auto;
+    width: 100%;
+}
+
+.person_known_for_mobile > div {
+    display: flex;
+    gap: 25px;
+
+    overflow-x: scroll;
+    padding-right: 15px;
+    height: auto;
+    width: 90vw;
+    min-width: 100%;
+}
