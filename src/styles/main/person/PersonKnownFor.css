@@ -6,7 +6,7 @@
     width: 100%;
 }
 
-.person_known_for_mobile > div {
+.person_known_for_cards {
     display: flex;
     gap: 25px;
 
