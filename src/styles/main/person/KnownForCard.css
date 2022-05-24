@@ -1,9 +1,9 @@
 .known_for_card_mobile {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 3ch;
 
+    padding: 10px 0;
     height: auto;
     width: auto;
 }
@@ -14,9 +14,12 @@
     width: 100px;
 }
 
-.known_for_card_mobile svg {
-    padding: 25px;
-    height: 100px;
+.card_poster svg {
+    background-color: antiquewhite;
+    align-self: center;
+    justify-self: center;
+    padding: 0 25px;
+    height: 100%;
     width: 100px;
 }
 
