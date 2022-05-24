@@ -1,7 +1,8 @@
 .known_for_card_mobile {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 3ch;
+    grid-template-rows: 1fr 5ch;
+    row-gap: 15px;
 
     padding: 10px 0;
     height: auto;
