@@ -13,7 +13,9 @@ const KnownForCard = ({ details, format }) => {
 
     return (
         <section className={format === 'mobile' ? 'known_for_card_mobile' : 'known_for_card_desktop'}>
-            {getPoster()}
+            <div className='card_poster'>
+                {getPoster()}
+            </div>
             <p>{name || title }</p>
         </section>
     );
