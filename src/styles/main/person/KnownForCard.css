@@ -23,6 +23,10 @@
     width: 100px;
 }
 
+.card_poster img {
+    border-radius: 8px;
+}
+
 .known_for_card_mobile p {
     font-size: 0.8rem;
     padding: 0 2px;
