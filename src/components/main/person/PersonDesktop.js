@@ -20,7 +20,7 @@ const PersonDesktop = ({ personInformation }) => {
             <section className='right_container'>
                 <PersonTitle format='desktop' personInformation={personInformation} />
                 <Biography biography={biography} format='desktop' />
-                <PersonKnownFor />
+                <PersonKnownFor credits={combinedCredits} format='desktop' />
             </section>
         </section>
     );
