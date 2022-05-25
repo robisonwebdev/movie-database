@@ -8,7 +8,7 @@ import PersonTitle from './PersonTitle';
 import '../../../styles/main/person/PersonDesktop.css';
 
 const PersonDesktop = ({ personInformation }) => {
-    const { biography, imagePath, name } = personInformation;
+    const { biography, combinedCredits, imagePath, name } = personInformation;
 
     return (
         <section className='person_desktop'>
