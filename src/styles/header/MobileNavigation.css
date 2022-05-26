@@ -5,14 +5,14 @@
     justify-content: center;
 
     height: auto;
-    width: 100%;
+    width: 95%;
 }
 
 .mobile_header {
     display: flex;
     justify-content: space-between;
 
-    padding: 10px;
+    padding: 10px 0;
     height: auto;
     width: 100%;
 }
