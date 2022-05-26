@@ -1,3 +1,4 @@
+.known_for_card_desktop,
 .known_for_card_mobile {
     display: grid;
     grid-template-columns: 1fr;
@@ -9,6 +10,7 @@
     width: auto;
 }
 
+.known_for_card_desktop img,
 .known_for_card_mobile img {
     object-fit: cover;
     height: auto;
@@ -28,6 +30,7 @@
     border-radius: 8px;
 }
 
+.known_for_card_desktop p,
 .known_for_card_mobile p {
     font-size: 0.8rem;
     padding: 0 2px;
