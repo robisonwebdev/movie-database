@@ -1,9 +1,11 @@
+.person_known_for_desktop,
 .person_known_for_mobile {
     display: flex;
     flex-direction: column;
+    gap: 15px;
 
-    height: auto;
     width: 100%;
+    height: auto;
 }
 
 .person_known_for_cards {
@@ -13,6 +15,5 @@
     overflow-x: scroll;
     padding-right: 15px;
     height: auto;
-    width: 90vw;
-    min-width: 100%;
+    width: 100%;
 }
