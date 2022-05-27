@@ -11,8 +11,14 @@
     gap: 15px;    
 }
 
-.biography_desktop, .biography_mobile {
+.biography_desktop,
+.biography_mobile {
     text-align: justify;
     height: auto;
     width: 100%;
+}
+
+.biography_desktop h2,
+.biography_mobile h2 {
+    font-weight: normal;
 }
