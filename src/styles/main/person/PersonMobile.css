@@ -9,3 +9,9 @@
     width: 100%;
     max-width: 100vw;
 }
+
+@media only screen and (max-width: 865px) and (min-width: 600px) {
+    .person_mobile {
+        padding: 30px 40px;
+    }
+  }
