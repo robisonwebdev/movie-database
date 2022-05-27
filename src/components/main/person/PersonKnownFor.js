@@ -11,7 +11,7 @@ const PersonKnownFor = ({ credits, format }) => {
 
     return (
         <section className={format === 'mobile' ? 'person_known_for_mobile' : 'person_known_for_desktop'}>
-            <h3>Known For</h3>
+            <h2>Known For</h2>
             <div className='person_known_for_cards'>
                 {mapTopCredits}
             </div>            
