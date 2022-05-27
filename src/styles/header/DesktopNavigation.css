@@ -2,9 +2,10 @@
     display: flex;
     justify-content: space-between;
 
-    padding: 10px 0;
+    padding: 10px 40px;
     height: auto;
-    width: 95%;
+    width: 100%;
+    max-width: 1400px;
 }
 
 .desktop_navigation ul {
