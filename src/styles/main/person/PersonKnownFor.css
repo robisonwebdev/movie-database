@@ -8,6 +8,11 @@
     height: auto;
 }
 
+.person_known_for_desktop h2,
+.person_known_for_mobile h2 {
+    font-weight: normal;
+}
+
 .person_known_for_cards {
     display: flex;
     gap: 25px;
