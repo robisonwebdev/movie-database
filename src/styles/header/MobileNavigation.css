@@ -4,15 +4,15 @@
     align-items: center;
     justify-content: center;
 
+    padding: 15px 20px;
     height: auto;
-    width: 95%;
+    width: 100%;
 }
 
 .mobile_header {
     display: flex;
     justify-content: space-between;
 
-    padding: 10px 0;
     height: auto;
     width: 100%;
 }
