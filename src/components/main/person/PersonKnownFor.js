@@ -14,8 +14,7 @@ const PersonKnownFor = ({ credits, format }) => {
             <h2>Known For</h2>
             <div className='person_known_for_cards'>
                 {mapTopCredits}
-            </div>            
-            {console.log(topCredits)}
+            </div>
         </section>
     );
 };
