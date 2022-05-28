@@ -1,5 +1,6 @@
 import React from 'react';
 import Biography from './Biography';
+import Filmography from './Filmography';
 import PersonalInformation from './PersonalInformation';
 import PersonImage from './PersonImage';
 import PersonKnownFor from './PersonKnownFor';
@@ -21,6 +22,7 @@ const PersonDesktop = ({ personInformation }) => {
                 <PersonTitle format='desktop' personInformation={personInformation} />
                 <Biography biography={biography} format='desktop' />
                 <PersonKnownFor credits={combinedCredits.cast} format='desktop' />
+                <Filmography />
             </section>
         </section>
     );
