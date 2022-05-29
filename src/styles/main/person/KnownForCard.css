@@ -2,8 +2,9 @@
 .known_for_card_mobile {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 5ch;
+    grid-template-rows: 1fr auto;
     row-gap: 15px;
+    align-self: flex-start;
 
     padding: 10px 0;
     height: auto;
