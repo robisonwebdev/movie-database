@@ -22,7 +22,7 @@ const PersonDesktop = ({ personInformation }) => {
                 <PersonTitle format='desktop' personInformation={personInformation} />
                 <Biography biography={biography} format='desktop' />
                 <PersonKnownFor credits={combinedCredits.cast} format='desktop' />
-                <Filmography />
+                <Filmography combinedCredits={combinedCredits} />
             </section>
         </section>
     );
