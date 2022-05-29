@@ -1,4 +1,5 @@
-import React, { useEffect, useState } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
+import axios from 'axios';
 import '../../../styles/main/person/Filmography.css';
 
 const Filmography = ({ combinedCredits }) => {
