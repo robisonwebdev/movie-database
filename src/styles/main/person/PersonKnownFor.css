@@ -17,8 +17,9 @@
     display: flex;
     gap: 25px;
 
-    overflow-x: scroll;
+    overflow-x: scroll;    
     padding-right: 15px;
+    padding-bottom: 5px;
     height: auto;
     width: 100%;
 }
