@@ -4,6 +4,7 @@ import FilmographyCard from './FilmographyCard';
 import '../../../styles/main/person/Filmography.css';
 
 const Filmography = ({ combinedCredits }) => {
+    const { cast, crew } = combinedCredits;
     const [filmography, setFilmography] = useState([]);
     const [jobList, setJobList] = useState([]);
     const [loading, setLoading] = useState(true);
@@ -32,7 +33,7 @@ const Filmography = ({ combinedCredits }) => {
     return (
         <section className='filmography'>
             Filmography
-            {loading ? null : console.log(jobList)}
+            {loading ? null : console.log(cast)}
         </section>
     );
 };
