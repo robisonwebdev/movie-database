@@ -1,8 +1,9 @@
 import React from 'react';
+import '../../../styles/main/person/FilmographyCard.css';
 
 const FilmographyCard = () => {
     return (
-        <section>FilmographyCard</section>
+        <section className='filmography_card'>FilmographyCard</section>
     );
 };
 
