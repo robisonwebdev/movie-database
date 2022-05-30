@@ -4,6 +4,7 @@ import FilmographyCard from './FilmographyCard';
 import '../../../styles/main/person/Filmography.css';
 
 const Filmography = ({ combinedCredits }) => {
+    const [filmography, setFilmography] = useState([]);
     const [jobList, setJobList] = useState([]);
     const [loading, setLoading] = useState(true);
 
