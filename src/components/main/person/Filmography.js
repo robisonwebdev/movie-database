@@ -1,6 +1,5 @@
 import React, { useCallback, useEffect, useState } from 'react';
 import axios from 'axios';
-import FilmographyCard from './FilmographyCard';
 import '../../../styles/main/person/Filmography.css';
 
 const Filmography = ({ combinedCredits }) => {
@@ -33,7 +32,7 @@ const Filmography = ({ combinedCredits }) => {
     return (
         <section className='filmography'>
             Filmography
-            {loading ? null : console.log(cast)}
+            {loading ? null : console.log(crew)}
         </section>
     );
 };
