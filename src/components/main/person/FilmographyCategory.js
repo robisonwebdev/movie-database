@@ -7,7 +7,10 @@ import '../../../styles/main/person/FilmographyCategory.css';
 const FilmographyCategory = () => {
     return (
         <section className='filmography_category'>
-            <div className='category_left'></div>
+            <div className='category_left'>
+                {title}
+                {`(${creditsNumber})`}
+            </div>
             <div className='category_right'></div>
         </section>
     );
