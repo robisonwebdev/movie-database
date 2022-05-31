@@ -11,7 +11,7 @@ const FilmographyCategory = () => {
         <section className='filmography_category'>
             <div className='category_left'>
                 <p>{title}</p>
-                <p>{`(${creditsNumber})`}</p>
+                <p>{`(${creditsNumber} credits)`}</p>
             </div>
             <div className='category_right'>
                 <p>{show ? 'Show' : 'Hide'}</p>
