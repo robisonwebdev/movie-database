@@ -31,7 +31,7 @@ const Filmography = ({ combinedCredits }) => {
     console.log(combinedCredits)
     return (
         <section className='filmography'>
-            Filmography
+            <h2>Filmography</h2>
             {loading ? null : console.log(crew)}
         </section>
     );
