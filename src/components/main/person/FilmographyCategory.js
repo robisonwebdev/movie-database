@@ -8,8 +8,8 @@ const FilmographyCategory = () => {
     return (
         <section className='filmography_category'>
             <div className='category_left'>
-                {title}
-                {`(${creditsNumber})`}
+                <p>{title}</p>
+                <p>{`(${creditsNumber})`}</p>
             </div>
             <div className='category_right'></div>
         </section>
