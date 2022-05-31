@@ -1,4 +1,5 @@
 import React from 'react';
+import FilmographyCard from './FilmographyCard';
 import '../../../styles/main/person/FilmographyCategory.css';
 
 const FilmographyCategory = () => {
