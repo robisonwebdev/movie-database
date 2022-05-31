@@ -9,14 +9,17 @@ const FilmographyCategory = () => {
 
     return (
         <section className='filmography_category'>
-            <div className='category_left'>
-                <p>{title}</p>
-                <p>{`(${creditsNumber} credits)`}</p>
+            <div className='category_title'>
+                <div className='category_left'>
+                    <p>{title}</p>
+                    <p>{`(${creditsNumber} credits)`}</p>
+                </div>
+                <div className='category_right'>
+                    <p>{show ? 'Show' : 'Hide'}</p>
+                    <p>{show ? <ArrowDropUpIcon /> : <ArrowDropDownIcon />}</p>
+                </div>
             </div>
-            <div className='category_right'>
-                <p>{show ? 'Show' : 'Hide'}</p>
-                <p>{show ? <ArrowDropUpIcon /> : <ArrowDropDownIcon />}</p>
-            </div>
+            <div className='category_content'></div>
         </section>
     );
 };
