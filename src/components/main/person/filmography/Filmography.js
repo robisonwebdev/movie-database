@@ -1,6 +1,6 @@
 import React, { useCallback, useEffect, useState } from 'react';
 import axios from 'axios';
-import '../../../styles/main/person/filmography/Filmography.css';
+import '../../../../styles/main/person/filmography/Filmography.css';
 
 const Filmography = ({ combinedCredits }) => {
     const { cast, crew } = combinedCredits;
