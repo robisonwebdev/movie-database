@@ -1,5 +1,5 @@
-.person_known_for_desktop,
-.person_known_for_mobile {
+.known_for_desktop,
+.known_for_mobile {
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -8,12 +8,12 @@
     height: auto;
 }
 
-.person_known_for_desktop h2,
-.person_known_for_mobile h2 {
+.known_for_desktop h2,
+.known_for_mobile h2 {
     font-weight: normal;
 }
 
-.person_known_for_cards {
+.known_for_cards {
     display: flex;
     gap: 25px;
 
