@@ -1,6 +1,6 @@
 import React from 'react';
 import MovieIcon from '@mui/icons-material/Movie';
-import '../../../styles/main/person/KnownForCard.css';
+import '../../../../styles/main/person/knownFor/KnownForCard.css';
 
 const KnownForCard = ({ details, format }) => {
     const { name, poster_path, title} = details;
