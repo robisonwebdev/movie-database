@@ -10,9 +10,9 @@ const KnownFor = ({ credits, format }) => {
     });
 
     return (
-        <section className={format === 'mobile' ? 'person_known_for_mobile' : 'person_known_for_desktop'}>
+        <section className={format === 'mobile' ? 'known_for_mobile' : 'known_for_desktop'}>
             <h2>Known For</h2>
-            <div className='person_known_for_cards'>
+            <div className='known_for_cards'>
                 {mapTopCredits}
             </div>
         </section>
