@@ -1,5 +1,5 @@
 import React from 'react';
-import Biography from './Biography';
+import Biography from './biography/Biography';
 import Filmography from './filmography/Filmography';
 import PersonalInformation from './PersonalInformation';
 import PersonImage from './PersonImage';
