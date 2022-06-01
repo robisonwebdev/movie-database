@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../../styles/main/person/Biography.css';
+import '../../../../styles/main/person/biography/Biography.css';
 
 const Biography = ({ biography, format }) => {
     const getBiography = () => {
