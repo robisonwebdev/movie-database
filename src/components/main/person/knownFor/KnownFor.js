@@ -1,8 +1,8 @@
 import React from 'react';
 import KnownForCard from './KnownForCard';
-import '../../../styles/main/person/PersonKnownFor.css';
+import '../../../../styles/main/person/knownFor/KnownFor.css';
 
-const PersonKnownFor = ({ credits, format }) => {
+const KnownFor = ({ credits, format }) => {
     const topCredits = credits.sort((a, b) => b.vote_count - a.vote_count).slice(0, 10);
 
     const mapTopCredits = topCredits.map(credit => {
@@ -19,4 +19,4 @@ const PersonKnownFor = ({ credits, format }) => {
     );
 };
 
-export default PersonKnownFor;
+export default KnownFor;
