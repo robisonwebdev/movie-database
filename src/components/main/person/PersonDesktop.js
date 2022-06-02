@@ -2,7 +2,7 @@ import React from 'react';
 import Biography from './biography/Biography';
 import Filmography from './filmography/Filmography';
 import PersonalInformation from './PersonalInformation';
-import PersonImage from './PersonImage';
+import Portrait from './misc/Portrait';
 import KnownFor from './knownFor/KnownFor';
 import SocialMedia from './misc/SocialMedia';
 import Title from './misc/Title';
@@ -14,7 +14,7 @@ const PersonDesktop = ({ personInformation }) => {
     return (
         <section className='person_desktop'>
             <section className='left_container'>
-                <PersonImage format='desktop' name={name} path={imagePath} />
+                <Portrait format='desktop' name={name} path={imagePath} />
                 <SocialMedia socialMedia={personInformation} />
                 <PersonalInformation format='desktop' personalInformation={personInformation} />
             </section>
