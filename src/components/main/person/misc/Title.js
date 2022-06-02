@@ -1,8 +1,8 @@
 import React from 'react';
 import PersonSocialMedia from './PersonSocialMedia';
-import '../../../styles/main/person/PersonTitle.css';
+import '../../../../styles/main/person/misc/Title.css';
 
-const PersonTitle = ({ format, personInformation }) => {
+const Title = ({ format, personInformation }) => {
     const { name } = personInformation;
 
     return (
@@ -13,4 +13,4 @@ const PersonTitle = ({ format, personInformation }) => {
     );
 };
 
-export default PersonTitle;
+export default Title;
