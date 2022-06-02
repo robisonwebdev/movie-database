@@ -2,9 +2,9 @@ import React from 'react';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';
-import '../../../styles/main/person/PersonSocialMedia.css';
+import '../../../../styles/main/person/misc/SocialMedia.css';
 
-const PersonSocialMedia = ({ socialMedia }) => {
+const SocialMedia = ({ socialMedia }) => {
     const { facebook, instagram, twitter } = socialMedia;
     const socialMediaArray = [
         {
@@ -46,4 +46,4 @@ const PersonSocialMedia = ({ socialMedia }) => {
     );
 };
 
-export default PersonSocialMedia;
+export default SocialMedia;
