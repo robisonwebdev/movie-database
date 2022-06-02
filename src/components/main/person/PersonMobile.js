@@ -1,6 +1,6 @@
 import React from 'react';
 import Biography from './biography/Biography';
-import PersonImage from './PersonImage';
+import Portrait from './misc/Portrait';
 import PersonalInformation from './PersonalInformation';
 import KnownFor from './knownFor/KnownFor';
 import Title from './misc/Title';
@@ -11,7 +11,7 @@ const PersonMobile = ({ personInformation }) => {
 
     return (
         <section className='person_mobile'>
-            <PersonImage format='mobile' name={name} path={imagePath} />
+            <Portrait format='mobile' name={name} path={imagePath} />
             <Title format='mobile' personInformation={personInformation} />
             <Biography biography={biography} format='mobile' />
             <PersonalInformation format='mobile' personalInformation={personInformation} />
