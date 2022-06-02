@@ -1,4 +1,4 @@
-.person_social_media {
+.social_media {
     display: flex;
     justify-content: center;
     gap: 10px;
@@ -8,6 +8,6 @@
     width: 100%;
 }
 
-.person_social_media li a {
+.social_media li a {
     color: #000;
 }

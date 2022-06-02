@@ -40,7 +40,7 @@ const SocialMedia = ({ socialMedia }) => {
     })
 
     return (
-        <ul className='person_social_media'>
+        <ul className='social_media'>
             {mapSocialMedia}
         </ul>
     );
