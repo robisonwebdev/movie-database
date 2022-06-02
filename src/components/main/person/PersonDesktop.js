@@ -5,7 +5,7 @@ import PersonalInformation from './PersonalInformation';
 import PersonImage from './PersonImage';
 import KnownFor from './knownFor/KnownFor';
 import PersonSocialMedia from './PersonSocialMedia';
-import PersonTitle from './PersonTitle';
+import Title from './misc/Title';
 import '../../../styles/main/person/PersonDesktop.css';
 
 const PersonDesktop = ({ personInformation }) => {
@@ -19,7 +19,7 @@ const PersonDesktop = ({ personInformation }) => {
                 <PersonalInformation format='desktop' personalInformation={personInformation} />
             </section>
             <section className='right_container'>
-                <PersonTitle format='desktop' personInformation={personInformation} />
+                <Title format='desktop' personInformation={personInformation} />
                 <Biography biography={biography} format='desktop' />
                 <KnownFor credits={combinedCredits.cast} format='desktop' />
                 <Filmography combinedCredits={combinedCredits} />
