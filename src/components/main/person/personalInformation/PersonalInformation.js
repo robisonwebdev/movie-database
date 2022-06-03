@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../../styles/main/person/PersonalInformation.css';
+import '../../../../styles/main/person/personalInformation/PersonalInformation.css';
 
 const PersonalInformation = ({ format, personalInformation }) => {
     const { birthday, birthPlace, deathday, gender, knownFor } = personalInformation;
