@@ -1,7 +1,7 @@
 import React from 'react';
 import Biography from './biography/Biography';
 import Portrait from './misc/Portrait';
-import PersonalInformation from './PersonalInformation';
+import PersonalInformation from './personalInformation/PersonalInformation';
 import KnownFor from './knownFor/KnownFor';
 import Title from './misc/Title';
 import '../../../styles/main/person/PersonMobile.css';
