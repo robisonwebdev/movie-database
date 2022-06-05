@@ -6,26 +6,7 @@ const Filmography = ({ combinedCredits }) => {
     const [filmography, setFilmography] = useState([]);
 
     const buildFilmographyCatagories = useCallback(() => {
-        const newState = filmography;
-
-        const setupAndUpdateDepartments = (object, objectDepartment) => {
-            const hasdepartment = newState.some(item => item.department === objectDepartment);
-    
-            if (hasdepartment) {
-                const departmentIndex = newState.findIndex(item => item.department === objectDepartment);
-    
-                newState[departmentIndex]['list'].push(object);
-            };
-                
-            if (!hasdepartment) {
-                let newObject = {
-                    department: objectDepartment,
-                    list: [object]
-                };
-    
-                newState.push(newObject);
-            };
-        };
+        const newState = filmography;        
 
         const getCastCatagories = () => {
             cast.forEach(obj => {
@@ -37,6 +18,27 @@ const Filmography = ({ combinedCredits }) => {
             crew.forEach(obj => {
                 setupAndUpdateDepartments(obj, obj.department);
             });
+        };
+
+        const setupAndUpdateDepartments = (object, objectDepartment) => {
+            const hasdepartment = newState.some(item => item.department === objectDepartment);
+    
+            // Updates selected department list by pushing object to list.
+            if (hasdepartment) {
+                const departmentIndex = newState.findIndex(item => item.department === objectDepartment);
+    
+                newState[departmentIndex]['list'].push(object);
+            };
+            
+            // Creates department object and pushes object to newState.
+            if (!hasdepartment) {
+                let newObject = {
+                    department: objectDepartment,
+                    list: [object]
+                };
+    
+                newState.push(newObject);
+            };
         };
 
         getCastCatagories();
