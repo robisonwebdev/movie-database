@@ -8,25 +8,28 @@ const Filmography = ({ combinedCredits }) => {
     const buildFilmographyCatagories = useCallback(() => {
         const newState = filmography;
 
-        crew.forEach(obj => {
-            const hasdepartment = newState.some(item => item.department === obj.department);
-
-            if (hasdepartment) {
-                const departmentIndex = newState.findIndex(item => item.department === obj.department);
-
-                newState[departmentIndex]['list'].push(obj);
-            };
-            
-            if (!hasdepartment) {
-                let newObject = {
-                    department: obj.department,
-                    list: [obj]
+        const getCrewCatagories = () => {
+            crew.forEach(obj => {
+                const hasdepartment = newState.some(item => item.department === obj.department);
+    
+                if (hasdepartment) {
+                    const departmentIndex = newState.findIndex(item => item.department === obj.department);
+    
+                    newState[departmentIndex]['list'].push(obj);
                 };
+                
+                if (!hasdepartment) {
+                    let newObject = {
+                        department: obj.department,
+                        list: [obj]
+                    };
+    
+                    newState.push(newObject);
+                };
+            });
+        };
 
-                newState.push(newObject);
-            };
-        });
-
+        getCrewCatagories();
         setFilmography(newState);
     }, [crew, filmography]);
 
