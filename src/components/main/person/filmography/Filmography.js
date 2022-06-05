@@ -8,6 +8,27 @@ const Filmography = ({ combinedCredits }) => {
     const buildFilmographyCatagories = useCallback(() => {
         const newState = filmography;
 
+        const getCastCatagories = () => {
+            cast.forEach(obj => {
+                const hasdepartment = newState.some(item => item.department === 'Acting');
+    
+                if (hasdepartment) {
+                    const departmentIndex = newState.findIndex(item => item.department === 'Acting');
+    
+                    newState[departmentIndex]['list'].push(obj);
+                };
+                
+                if (!hasdepartment) {
+                    let newObject = {
+                        department: 'Acting',
+                        list: [obj]
+                    };
+    
+                    newState.push(newObject);
+                };
+            });
+        };
+
         const getCrewCatagories = () => {
             crew.forEach(obj => {
                 const hasdepartment = newState.some(item => item.department === obj.department);
@@ -29,6 +50,7 @@ const Filmography = ({ combinedCredits }) => {
             });
         };
 
+        getCastCatagories();
         getCrewCatagories();
         setFilmography(newState);
     }, [crew, filmography]);
@@ -41,6 +63,7 @@ const Filmography = ({ combinedCredits }) => {
         <section className='filmography'>
             <h2>Filmography</h2>
             {console.log('Filmography:', filmography)}
+            {console.log('Cast:', cast)}
         </section>
     );
 };
