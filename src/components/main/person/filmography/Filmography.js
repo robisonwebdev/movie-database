@@ -8,45 +8,34 @@ const Filmography = ({ combinedCredits }) => {
     const buildFilmographyCatagories = useCallback(() => {
         const newState = filmography;
 
+        const setupAndUpdateDepartments = (object, objectDepartment) => {
+            const hasdepartment = newState.some(item => item.department === objectDepartment);
+    
+            if (hasdepartment) {
+                const departmentIndex = newState.findIndex(item => item.department === objectDepartment);
+    
+                newState[departmentIndex]['list'].push(object);
+            };
+                
+            if (!hasdepartment) {
+                let newObject = {
+                    department: objectDepartment,
+                    list: [object]
+                };
+    
+                newState.push(newObject);
+            };
+        };
+
         const getCastCatagories = () => {
             cast.forEach(obj => {
-                const hasdepartment = newState.some(item => item.department === 'Acting');
-    
-                if (hasdepartment) {
-                    const departmentIndex = newState.findIndex(item => item.department === 'Acting');
-    
-                    newState[departmentIndex]['list'].push(obj);
-                };
-                
-                if (!hasdepartment) {
-                    let newObject = {
-                        department: 'Acting',
-                        list: [obj]
-                    };
-    
-                    newState.push(newObject);
-                };
+                setupAndUpdateDepartments(obj, 'Acting');
             });
         };
 
         const getCrewCatagories = () => {
             crew.forEach(obj => {
-                const hasdepartment = newState.some(item => item.department === obj.department);
-    
-                if (hasdepartment) {
-                    const departmentIndex = newState.findIndex(item => item.department === obj.department);
-    
-                    newState[departmentIndex]['list'].push(obj);
-                };
-                
-                if (!hasdepartment) {
-                    let newObject = {
-                        department: obj.department,
-                        list: [obj]
-                    };
-    
-                    newState.push(newObject);
-                };
+                setupAndUpdateDepartments(obj, obj.department);
             });
         };
 
