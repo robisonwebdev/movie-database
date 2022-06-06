@@ -7,13 +7,14 @@ import '../../../../styles/main/person/filmography/FilmographyCategory.css';
 const FilmographyCategory = ({ category }) => {
     const { department, list } = category;
     const [show, setShow] = useState(false);
+    const numberOfCredits = `(${list.length} credits)`;
 
     return (
         <section className='filmography_category'>
             <div className='category_title'>
                 <div className='category_left'>
                     <p>{department}</p>
-                    <p>{`(${list.length} credits)`}</p>
+                    <p>{numberOfCredits}</p>
                 </div>
                 <div className='category_right'>
                     <p>{show ? 'Show' : 'Hide'}</p>
