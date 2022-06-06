@@ -1,9 +1,11 @@
 import React, { useCallback, useEffect, useState } from 'react';
+import FilmographyCategory from './FilmographyCategory';
 import '../../../../styles/main/person/filmography/Filmography.css';
 
 const Filmography = ({ combinedCredits }) => {
     const { cast, crew } = combinedCredits;
     const [filmography, setFilmography] = useState([]);
+    const [loading, setLoading] = useState(true);
 
     const buildFilmographyCatagories = useCallback(() => {
         const newState = filmography;        
@@ -34,7 +36,8 @@ const Filmography = ({ combinedCredits }) => {
             if (!hasdepartment) {
                 let newObject = {
                     department: objectDepartment,
-                    list: [object]
+                    list: [object],
+                    id: filmography.length + Math.floor(Math.random() * 100)
                 };
     
                 newState.push(newObject);
@@ -44,7 +47,12 @@ const Filmography = ({ combinedCredits }) => {
         getCastCatagories();
         getCrewCatagories();
         setFilmography(newState);
-    }, [crew, filmography]);
+        setLoading(false);
+    }, [cast, crew, filmography]);
+
+    const mapFilmographyCategories = filmography.map(category => {
+        return <FilmographyCategory category={category} key={category.id} />;
+    });
 
     useEffect(() => {
         buildFilmographyCatagories();
@@ -53,8 +61,7 @@ const Filmography = ({ combinedCredits }) => {
     return (
         <section className='filmography'>
             <h2>Filmography</h2>
-            {console.log('Filmography:', filmography)}
-            {console.log('Cast:', cast)}
+            {loading ? null : mapFilmographyCategories}
         </section>
     );
 };
