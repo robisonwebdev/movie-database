@@ -4,15 +4,16 @@ import ArrowDropUpIcon from '@mui/icons-material/ArrowDropUp';
 import FilmographyCard from './FilmographyCard';
 import '../../../../styles/main/person/filmography/FilmographyCategory.css';
 
-const FilmographyCategory = () => {
+const FilmographyCategory = ({ category }) => {
+    const { department, list } = category;
     const [show, setShow] = useState(false);
 
     return (
         <section className='filmography_category'>
             <div className='category_title'>
                 <div className='category_left'>
-                    <p>{title}</p>
-                    <p>{`(${creditsNumber} credits)`}</p>
+                    <p>{department}</p>
+                    <p>{`(${list.length} credits)`}</p>
                 </div>
                 <div className='category_right'>
                     <p>{show ? 'Show' : 'Hide'}</p>
