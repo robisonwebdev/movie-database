@@ -9,6 +9,10 @@ const FilmographyCategory = ({ category }) => {
     const [show, setShow] = useState(false);
     const numberOfCredits = `(${list.length} credits)`;
 
+    const handleClick = () => {
+        setShow(!show);
+    };
+
     return (
         <section className='filmography_category'>
             <div className='category_title'>
@@ -17,8 +21,8 @@ const FilmographyCategory = ({ category }) => {
                     <p>{numberOfCredits}</p>
                 </div>
                 <div className='category_right'>
-                    <p>{show ? 'Show' : 'Hide'}</p>
-                    <p>{show ? <ArrowDropUpIcon /> : <ArrowDropDownIcon />}</p>
+                    <p onClick={handleClick}>{show ? 'Show' : 'Hide'}</p>
+                    <p onClick={handleClick}>{show ? <ArrowDropUpIcon /> : <ArrowDropDownIcon />}</p>
                 </div>
             </div>
             <div className='category_content'></div>
