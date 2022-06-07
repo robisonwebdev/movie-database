@@ -25,3 +25,9 @@
     height: auto;
     width: auto;
 }
+
+.category_right svg {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
