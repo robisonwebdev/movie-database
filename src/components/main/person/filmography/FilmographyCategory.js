@@ -13,6 +13,10 @@ const FilmographyCategory = ({ category }) => {
         setShow(!show);
     };
 
+    const mapList = list.map(film => {
+        return <FilmographyCard film={film} key={film.id} />
+    });
+
     return (
         <section className='filmography_category'>
             <div className='category_title'>
@@ -25,7 +29,9 @@ const FilmographyCategory = ({ category }) => {
                     <p onClick={handleClick}>{show ? <ArrowDropUpIcon /> : <ArrowDropDownIcon />}</p>
                 </div>
             </div>
-            <div className='category_content'></div>
+            <div className='category_content'>
+                {show ? mapList : null}
+            </div>
         </section>
     );
 };
