@@ -10,6 +10,12 @@ const FilmographyCard = ({ film }) => {
         return character;
     };
 
+    const getFilmName = () => {
+        const filmName = film.name || film.title;
+
+        return filmName;
+    };
+
     const filmYear = () => {
         const orginalDate = new Date(film.release_date || film.first_air_date);
         const getYear = orginalDate.getUTCFullYear();
@@ -21,6 +27,7 @@ const FilmographyCard = ({ film }) => {
         <section className='filmography_card'>
             {console.log(film)}
             <div>
+                <strong>{getFilmName()}</strong>
                 <p>{getCharacter()}</p>
             </div>
             <p></p>
