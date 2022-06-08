@@ -25,14 +25,11 @@ const FilmographyCard = ({ film }) => {
 
     return (
         <section className='filmography_card'>
-            {console.log(film)}
             <div>
-                <strong>{getFilmName()}</strong>
-                <p>{getCharacter()}</p>
+                <strong className='title'>{getFilmName()}</strong>
+                <p className='character'>{getCharacter()}</p>
             </div>
-            <p>
-                {getFilmYear()}
-            </p>
+            <p className='year'>{getFilmYear()}</p>
         </section>
     );
 };
