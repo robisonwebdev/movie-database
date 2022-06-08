@@ -1,0 +1,7 @@
+.filmography_card {
+    display: flex;
+    justify-content: space-between;
+
+    height: auto;
+    width: 100%;
+}
