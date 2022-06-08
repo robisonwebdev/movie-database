@@ -16,7 +16,7 @@ const FilmographyCard = ({ film }) => {
         return filmName;
     };
 
-    const filmYear = () => {
+    const getFilmYear = () => {
         const orginalDate = new Date(film.release_date || film.first_air_date);
         const getYear = orginalDate.getUTCFullYear();
 
@@ -30,7 +30,9 @@ const FilmographyCard = ({ film }) => {
                 <strong>{getFilmName()}</strong>
                 <p>{getCharacter()}</p>
             </div>
-            <p></p>
+            <p>
+                {getFilmYear()}
+            </p>
         </section>
     );
 };
