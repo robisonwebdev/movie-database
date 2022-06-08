@@ -26,6 +26,10 @@
     width: auto;
 }
 
+.category_right p {
+    cursor: pointer;
+}
+
 .category_right svg {
     display: flex;
     align-items: center;
