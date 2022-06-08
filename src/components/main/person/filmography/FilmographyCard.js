@@ -20,6 +20,8 @@ const FilmographyCard = ({ film }) => {
         const orginalDate = new Date(film.release_date || film.first_air_date);
         const getYear = orginalDate.getUTCFullYear();
 
+        if (isNaN(getYear)) return null;
+
         return getYear;
     };
 
