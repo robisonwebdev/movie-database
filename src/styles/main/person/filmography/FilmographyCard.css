@@ -1,6 +1,7 @@
 .filmography_card {
     display: flex;
     justify-content: space-between;
+    gap: 30px;
 
     font-size: 0.9rem;
     height: auto;
