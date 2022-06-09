@@ -1,7 +1,10 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import '../../../../styles/main/person/filmography/FilmographyCard.css';
 
 const FilmographyCard = ({ film }) => {
+    const { id } = film;
+
     const getCharacter = () => {
         const character = film.character;
 
@@ -25,10 +28,16 @@ const FilmographyCard = ({ film }) => {
         return getYear;
     };
 
+    const linkTo = `/movie/${id}`;
+
     return (
         <section className='filmography_card'>
             <div>
-                <strong className='title'>{getFilmName()}</strong>
+                <strong className='title'>
+                    <Link to={linkTo}>
+                        {getFilmName()}
+                    </Link>
+                </strong>
                 <p className='character'>{getCharacter()}</p>
             </div>
             <p className='year'>{getFilmYear()}</p>
