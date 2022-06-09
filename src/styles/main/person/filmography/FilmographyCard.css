@@ -7,3 +7,8 @@
     height: auto;
     width: 100%;
 }
+
+.filmography_card a {
+    color: #000;
+    text-decoration: none;
+}
