@@ -1,8 +1,9 @@
 import React from 'react';
+import '../../../../styles/main/movie/header/Overview.css';
 
 const Overview = () => {
     return (
-        <section>Overview</section>
+        <section className='movie_header_overview'>Overview</section>
     );
 };
 
