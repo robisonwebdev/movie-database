@@ -35,7 +35,6 @@ const FilmographyCategory = ({ category }) => {
 
     return (
         <section className='filmography_category'>
-            {console.log('list:', list)}
             <div className='category_title'>
                 <div className='category_left'>
                     <p>{department}</p>
