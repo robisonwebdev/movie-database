@@ -42,7 +42,7 @@ const FilmographyCategory = ({ category }) => {
                     <p>{numberOfCredits}</p>
                 </div>
                 <div className='category_right'>
-                    <p onClick={handleClick}>{show ? 'Show' : 'Hide'}</p>
+                    <p onClick={handleClick}>{show ? 'Hide' : 'Show'}</p>
                     <p onClick={handleClick}>{show ? <ArrowDropUpIcon /> : <ArrowDropDownIcon />}</p>
                 </div>
             </div>
