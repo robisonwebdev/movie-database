@@ -17,12 +17,9 @@
     width: 100%;
 }
 
-.personal_information_mobile {
-    text-align: center;
-}
-
 .personal_information_mobile h3 {
     font-size: 1.5rem;
+    font-weight: normal;
 }
 
 .personal_information_mobile .personal_information_items {
@@ -34,4 +31,8 @@
     text-align: center;
     height: auto;
     width: 100%;
+}
+
+.personal_information_items h4 {
+    font-weight: normal;
 }
