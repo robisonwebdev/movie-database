@@ -1,8 +1,9 @@
 import React from 'react';
+import '../../../../styles/main/movie/topCast/TopCastCard.css';
 
 const TopCastCard = () => {
     return (
-        <section>TopCastCard</section>
+        <section className='movie_top_cast_card'>TopCastCard</section>
     );
 };
 
