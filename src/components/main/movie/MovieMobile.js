@@ -1,8 +1,9 @@
 import React from 'react';
+import '../../../styles/main/movie/MovieMobile.css';
 
 const MovieMobile = () => {
     return (
-        <div>MovieMobile</div>
+        <section className='movie_mobile'>MovieMobile</section>
     );
 };
 
