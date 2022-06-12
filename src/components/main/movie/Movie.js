@@ -1,6 +1,8 @@
 import React, { useCallback, useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
+import MovieDesktop from './MovieDesktop';
+import MovieMobile from './MovieMobile';
 import '../../../styles/main/movie/Movie.css';
 
 const Movie = () => {
