@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
+import breakpoint from '../../breakpoint';
 import PersonDesktop from './PersonDesktop';
 import PersonMobile from './PersonMobile';
 import '../../../styles/main/person/Person.css';
@@ -10,7 +11,6 @@ const Person = () => {
     const [personInformation, setPersonInformation] = useState({})
     const [width, setWidth] = useState(window.innerWidth);
     const { personID } = useParams();
-    const breakpoint = 865;
 
     const fetchData = useCallback(() => {
         const combinedCredits_API = `https://api.themoviedb.org/3/person/${personID}/combined_credits?api_key=9289aca3a6413b200619b263ac82e4c0&language=en-US`;
