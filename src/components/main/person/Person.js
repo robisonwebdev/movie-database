@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
-import breakpoint from '../../breakpoint';
+import breakpoint from '../../config/breakpoint';
 import PersonDesktop from './PersonDesktop';
 import PersonMobile from './PersonMobile';
 import '../../../styles/main/person/Person.css';
