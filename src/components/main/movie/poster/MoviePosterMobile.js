@@ -1,10 +1,10 @@
 import React from 'react';
-import '../../../../styles/main/movie/poster/PosterMobileView.css';
+import '../../../../styles/main/movie/poster/MoviePosterMobile.css';
 
-const PosterMobileView = () => {
+const MoviePosterMobile = () => {
     return (
-        <section className='movie_poster_mobile'>PosterMobileView</section>
+        <section className='movie_poster_mobile'>MoviePosterMobile</section>
     );
 };
 
-export default PosterMobileView;
+export default MoviePosterMobile;
