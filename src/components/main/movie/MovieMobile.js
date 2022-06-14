@@ -1,5 +1,5 @@
 import React from 'react';
-import Poster from './header/Poster';
+import Poster from './poster/Poster';
 import '../../../styles/main/movie/MovieMobile.css';
 
 const MovieMobile = ({ movie }) => {
