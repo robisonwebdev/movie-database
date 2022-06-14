@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../../../styles/main/movie/header/Poster.css';
+import '../../../../styles/main/movie/poster/Poster.css';
 
 const Poster = ({ format, movie }) => {
     const { backdrop_path, poster_path } = movie;
