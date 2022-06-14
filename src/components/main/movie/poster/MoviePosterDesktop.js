@@ -1,8 +1,9 @@
 import React from 'react';
+import '../../../../styles/main/movie/poster/MoviePosterDesktop.css';
 
 const MoviePosterDesktop = () => {
     return (
-        <section>MoviePosterDesktop</section>
+        <section className='movie_poster_desktop'>MoviePosterDesktop</section>
     );
 };
 
