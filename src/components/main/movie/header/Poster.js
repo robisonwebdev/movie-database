@@ -9,7 +9,9 @@ const Poster = ({ format, movie }) => {
     const mobileDisplay = () => {};
 
     return (
-        <section className='movie_header_poster'>Poster</section>
+        <section className='movie_header_poster'>
+            {format === 'mobile' ? mobileDisplay() : desktopDisplay()}
+        </section>
     );
 };
 
