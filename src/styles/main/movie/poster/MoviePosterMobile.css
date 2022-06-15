@@ -1,4 +1,5 @@
 .movie_poster_mobile {
-    height: auto;
+    object-fit: contain;
+    max-height: 300px;
     width: 100%;
 }
