@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../../../styles/main/movie/header/Title.css';
+import '../../../../styles/main/movie/title/Title.css';
 
 const Title = () => {
     return (
