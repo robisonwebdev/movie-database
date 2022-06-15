@@ -1,5 +1,6 @@
 import React from 'react';
 import Poster from './poster/Poster';
+import Title from './header/Title';
 import '../../../styles/main/movie/MovieMobile.css';
 
 const MovieMobile = ({ movie }) => {
@@ -7,6 +8,7 @@ const MovieMobile = ({ movie }) => {
         <section className='movie_mobile'>
             <section className='movie_mobile_header'>
                 <Poster format='mobile' movie={movie} />
+                <Title />
             </section>
             <section className='movie_mobile_main'>Main</section>
         </section>
