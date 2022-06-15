@@ -8,7 +8,7 @@ const Poster = ({ format, movie }) => {
 
     return (
         <section className='movie_header_poster'>
-            {format === 'mobile' ? <MoviePosterMobile /> : <MoviePosterDesktop />}
+            {format === 'mobile' ? <MoviePosterMobile movie={movie} /> : <MoviePosterDesktop movie={movie} />}
         </section>
     );
 };
