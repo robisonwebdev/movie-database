@@ -7,13 +7,13 @@ const MoviePosterMobile = ({ movie }) => {
     const getBackdrop = () => {
         const backdropURL = `https://www.themoviedb.org/t/p/w1920_and_h800_multi_faces${backdrop_path}`;
 
-        return <img src={backdropURL} alt={title} />
+        return <img className='movie_poster_mobile' src={backdropURL} alt={title} />
     };
 
     return (
-        <section className='movie_poster_mobile'>
+        <>
             {getBackdrop()}
-        </section>
+        </>
     );
 };
 
