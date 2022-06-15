@@ -1,6 +1,6 @@
 import React from 'react';
 import Poster from './poster/Poster';
-import Title from './header/Title';
+import Title from './title/Title';
 import '../../../styles/main/movie/MovieMobile.css';
 
 const MovieMobile = ({ movie }) => {
