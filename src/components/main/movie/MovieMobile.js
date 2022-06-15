@@ -8,7 +8,7 @@ const MovieMobile = ({ movie }) => {
         <section className='movie_mobile'>
             <section className='movie_mobile_header'>
                 <Poster format='mobile' movie={movie} />
-                <Title />
+                <Title movie={movie} />
             </section>
             <section className='movie_mobile_main'>Main</section>
         </section>
