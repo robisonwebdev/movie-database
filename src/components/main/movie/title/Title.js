@@ -1,4 +1,5 @@
 import React from 'react';
+import Date from './Date';
 import Rating from './Rating';
 import '../../../../styles/main/movie/title/Title.css';
 
@@ -11,6 +12,7 @@ const Title = ({ movie }) => {
             <div>
                 <div>
                     <Rating data={release_dates} />
+                    <Date data={release_dates} />
                 </div>
             </div>
         </section>
