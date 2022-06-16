@@ -1,7 +1,7 @@
 import React from 'react';
 import '../../../../styles/main/movie/title/Rating.css';
 
-const Rating = () => {
+const Rating = ({ data }) => {
     return (
         <div>Rating</div>
     );
