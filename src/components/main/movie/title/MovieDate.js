@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../../../styles/main/movie/title/Date.css';
+import '../../../../styles/main/movie/title/MovieDate.css';
 
 const MovieDate = ({ data }) => {
     const USReleaseDates = data.results.filter(obj => obj['iso_3166_1'] === 'US');
