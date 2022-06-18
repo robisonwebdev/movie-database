@@ -44,7 +44,7 @@ const Movie = () => {
 
     return (
         <section className='movie'>
-            {loading ? null : console.log('MovieData:', movieData)}
+            {/* {loading ? null : console.log('MovieData:', movieData)} */}
             {loading 
                 ? null
                 : width < breakpoint ? <MovieMobile movie={movieData} /> : <MovieDesktop movie={movieData} />
