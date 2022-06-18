@@ -1,5 +1,5 @@
 import React from 'react';
-import Date from './Date';
+import MovieDate from './MovieDate';
 import Genres from './Genres';
 import Rating from './Rating';
 import Runtime from './Runtime';
@@ -14,7 +14,7 @@ const Title = ({ movie }) => {
             <div>
                 <div>
                     <Rating data={release_dates} />
-                    <Date data={release_dates} />
+                    <MovieDate data={release_dates} />
                     <Genres data={genres} />
                     <Runtime data={runtime} />
                 </div>
