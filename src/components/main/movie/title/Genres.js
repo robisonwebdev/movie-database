@@ -1,9 +1,21 @@
 import React from 'react';
 import '../../../../styles/main/movie/title/Genres.css';
 
-const Genres = ({ data }) => {
+const Genres = ({ genres }) => {
+    const getGenres = () => {
+        const genresList = [];
+
+        genres.forEach(genre => {
+            genresList.push(genre.name);
+        });
+
+        return genresList.join(', ');
+    };
+
     return (
-        <div>Genres</div>
+        <p className='movie_genres'>
+            {getGenres()}
+        </p>
     );
 };
 
