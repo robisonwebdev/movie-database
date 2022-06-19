@@ -7,6 +7,8 @@ const Runtime = ({ runtime }) => {
         const hours = Math.floor(runtimeToHours);
         const minutes = Math.floor((runtimeToHours - hours) * 60);
 
+        if (isNaN(runtime)) return null;
+
         return hours >=1 ? `${hours}h ${minutes}m` : `${minutes}m`;
     };
 
