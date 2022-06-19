@@ -16,10 +16,9 @@ const MovieDate = ({ data }) => {
     };
 
     return (
-        <div>
-            {console.log(theatricalReleaseDates)}
+        <p className='movie_date'>
             {getDate()}
-        </div>
+        </p>
     );
 };
 
