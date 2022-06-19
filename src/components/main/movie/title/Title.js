@@ -11,12 +11,13 @@ const Title = ({ movie }) => {
     return (
         <section className='movie_header_title'>
             <h3>{title}</h3>
+            {console.log(genres)}
             <div>
                 <div>
                     <Rating data={release_dates} />
                     <MovieDate data={release_dates} />
-                    <Genres data={genres} />
-                    <Runtime data={runtime} />
+                    <Genres genres={genres} />
+                    <Runtime runtime={runtime} />
                 </div>
             </div>
         </section>
