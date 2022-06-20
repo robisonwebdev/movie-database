@@ -1,7 +1,7 @@
 import React from 'react';
 import '../../../../styles/main/movie/title/MovieDate.css';
 
-const MovieDate = ({ data }) => {
+const MovieDate = ({ data, format }) => {
     const USReleaseDates = data.results.filter(obj => obj['iso_3166_1'] === 'US');
     const theatricalReleaseDates = USReleaseDates[0]['release_dates'].filter(obj => obj.type === 3);
 
@@ -11,6 +11,8 @@ const MovieDate = ({ data }) => {
         const year = getDate.getUTCFullYear();
         const month = getDate.getUTCMonth() + 1;
         const day = getDate.getUTCDate();
+
+        if (format === 'yyyy') return `(${year})`;
 
         return `${month}/${day}/${year} (US)`;
     };
