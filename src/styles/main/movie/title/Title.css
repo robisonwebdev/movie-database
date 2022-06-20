@@ -1,0 +1,7 @@
+.movie_header_title {
+    display: flex;
+    flex-direction: column;
+
+    height: auto;
+    width: auto;
+}
