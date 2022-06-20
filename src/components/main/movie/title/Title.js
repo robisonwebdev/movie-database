@@ -12,6 +12,7 @@ const Title = ({ movie }) => {
         <section className='movie_header_title'>
             <div className='movie_title'>
                 <h3>{title}</h3>
+                <MovieDate data={release_dates} format='yyyy' />
             </div>
             <div className='movie_mini_info'>
                 <Rating data={release_dates} />
