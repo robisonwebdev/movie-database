@@ -16,8 +16,11 @@ const Title = ({ movie }) => {
             </div>
             <div className='movie_mini_info'>
                 <Rating data={release_dates} />
+                &#8226;
                 <MovieDate data={release_dates} />
+                &#8226;
                 <Genres genres={genres} />
+                &#8226;
                 <Runtime runtime={runtime} />
             </div>
         </section>
