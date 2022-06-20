@@ -10,15 +10,14 @@ const Title = ({ movie }) => {
 
     return (
         <section className='movie_header_title'>
-            <h3>{title}</h3>
-            {console.log(genres)}
-            <div>
-                <div>
-                    <Rating data={release_dates} />
-                    <MovieDate data={release_dates} />
-                    <Genres genres={genres} />
-                    <Runtime runtime={runtime} />
-                </div>
+            <div className='movie_title'>
+                <h3>{title}</h3>
+            </div>
+            <div className='movie_mini_info'>
+                <Rating data={release_dates} />
+                <MovieDate data={release_dates} />
+                <Genres genres={genres} />
+                <Runtime runtime={runtime} />
             </div>
         </section>
     );
