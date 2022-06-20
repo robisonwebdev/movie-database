@@ -1,6 +1,8 @@
 .movie_header_title {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
 
     height: auto;
     width: auto;
