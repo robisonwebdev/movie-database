@@ -5,3 +5,12 @@
     height: auto;
     width: auto;
 }
+
+.movie_title {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    height: auto;
+    width: auto;
+}
