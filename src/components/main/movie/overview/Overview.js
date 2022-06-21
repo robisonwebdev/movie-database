@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../../../styles/main/movie/header/Overview.css';
+import '../../../../styles/main/movie/overview/Overview.css';
 
 const Overview = () => {
     return (
