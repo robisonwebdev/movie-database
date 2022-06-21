@@ -4,9 +4,17 @@ import '../../../../styles/main/movie/overview/Overview.css';
 const Overview = ({ movie }) => {
     const { overview } = movie;
 
+    const getOverview = () => {
+        if (overview === '') return 'No overview available.';
+
+        return overview;
+    };
+
     return (
         <section className='movie_header_overview'>
-            {console.log(overview)}
+            <p>
+                {getOverview()}
+            </p>
         </section>
     );
 };
