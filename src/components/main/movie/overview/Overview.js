@@ -12,6 +12,7 @@ const Overview = ({ movie }) => {
 
     return (
         <section className='movie_header_overview'>
+            <h3>Overview</h3>
             <p>
                 {getOverview()}
             </p>
