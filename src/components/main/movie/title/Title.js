@@ -23,12 +23,12 @@ const Title = ({ movie }) => {
         <section className='movie_header_title'>
             <div className='movie_title'>
                 <h3>{title}</h3>
-                {/* <MovieDate data={release_dates} format='yyyy' /> */}
+                <MovieDate releaseDate={releaseDate} format='yyyy' />
             </div>
             <div className='movie_mini_info'>
                 <Rating releaseDate={releaseDate} />
                 &#8226;
-                {/* <MovieDate data={release_dates} /> */}
+                <MovieDate releaseDate={releaseDate} />
                 &#8226;
                 <Genres genres={genres} />
                 &#8226;
