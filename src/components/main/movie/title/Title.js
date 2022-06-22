@@ -9,6 +9,14 @@ const Title = ({ movie }) => {
     const { genres, release_dates, runtime, title } = movie;
     const [releaseDate, setReleaseDate] = useState(null);
 
+    useEffect(() => {
+        const USReleaseDates = release_dates.results.filter(obj => obj['iso_3166_1'] === 'US');
+
+        if (USReleaseDates.length === 0) return null;
+
+        setReleaseDate(USReleaseDates);
+    }, [release_dates]);
+
     return (
         <section className='movie_header_title'>
             <div className='movie_title'>
@@ -16,7 +24,7 @@ const Title = ({ movie }) => {
                 {/* <MovieDate data={release_dates} format='yyyy' /> */}
             </div>
             <div className='movie_mini_info'>
-                <Rating data={release_dates} />
+                <Rating releaseDate={releaseDate} />
                 &#8226;
                 {/* <MovieDate data={release_dates} /> */}
                 &#8226;
