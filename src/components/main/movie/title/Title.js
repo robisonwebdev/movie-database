@@ -12,9 +12,11 @@ const Title = ({ movie }) => {
     useEffect(() => {
         const USReleaseDates = release_dates.results.filter(obj => obj['iso_3166_1'] === 'US');
 
-        if (USReleaseDates.length === 0) return null;
+        if (USReleaseDates.length !== 0) {
+            let movieDates = USReleaseDates[0]['release_dates'].filter(obj => obj.type === 3);
 
-        setReleaseDate(USReleaseDates);
+            setReleaseDate(movieDates);
+        };
     }, [release_dates]);
 
     return (
