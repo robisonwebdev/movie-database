@@ -6,7 +6,21 @@ import '../../../../styles/main/movie/header/MovieHeader.css';
 
 const MovieHeader = ({ movie }) => {
     return (
-        <section className='movie_header'>MovieHeader</section>
+        <section className='movie_header'>
+            
+        </section>
+    );
+};
+
+const DesktopLayout = () => {
+    return (
+        <section className='movie_header_desktop'></section>
+    );
+};
+
+const MobileLayout = () => {
+    return (
+        <section className='movie_header_mobile'></section>
     );
 };
 
