@@ -3,12 +3,12 @@ import MoviePosterDesktop from './MoviePosterDesktop';
 import MoviePosterMobile from './MoviePosterMobile';
 import '../../../../styles/main/movie/poster/Poster.css';
 
-const Poster = ({ format, movie }) => {
+const Poster = ({ isMobile, movie }) => {
     const { backdrop_path, poster_path } = movie;
 
     return (
         <section className='movie_header_poster'>
-            {format === 'mobile' ? <MoviePosterMobile movie={movie} /> : <MoviePosterDesktop movie={movie} />}
+            {isMobile ? <MoviePosterMobile movie={movie} /> : <MoviePosterDesktop movie={movie} />}
         </section>
     );
 };
