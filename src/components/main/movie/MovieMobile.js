@@ -1,17 +1,11 @@
 import React from 'react';
-import Overview from './overview/Overview';
-import Poster from './poster/Poster';
-import Title from './title/Title';
+import MovieHeader from './header/MovieHeader';
 import '../../../styles/main/movie/MovieMobile.css';
 
 const MovieMobile = ({ movie }) => {
     return (
         <section className='movie_mobile'>
-            <section className='movie_mobile_header'>
-                <Poster format='mobile' movie={movie} />
-                <Title movie={movie} />
-                <Overview movie={movie} />
-            </section>
+            <MovieHeader movie={movie} />
             <section className='movie_mobile_main'>Main</section>
         </section>
     );
