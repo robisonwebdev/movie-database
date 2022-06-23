@@ -47,7 +47,7 @@ const Movie = () => {
             {/* {loading ? null : console.log('MovieData:', movieData)} */}
             {loading 
                 ? null
-                : width < breakpoint ? <MovieMobile movie={movieData} /> : <MovieDesktop movie={movieData} />
+                : width < breakpoint ? <MovieMobile isMobile='true' movie={movieData} /> : <MovieDesktop isMobile='false' movie={movieData} />
             }
         </section>
     );
