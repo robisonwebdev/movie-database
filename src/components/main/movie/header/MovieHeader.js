@@ -7,20 +7,24 @@ import '../../../../styles/main/movie/header/MovieHeader.css';
 const MovieHeader = ({ isMobile, movie }) => {
     return (
         <section className='movie_header'>
-            {isMobile ? <MobileLayout /> : <DesktopLayout />}
+            {isMobile ? <MobileLayout isMobile={isMobile} movie={movie} /> : <DesktopLayout isMobile={isMobile} movie={movie} />}
         </section>
     );
 };
 
-const DesktopLayout = () => {
+const DesktopLayout = ({ isMobile, movie }) => {
     return (
         <section className='movie_header_desktop'>Desktop Layout</section>
     );
 };
 
-const MobileLayout = () => {
+const MobileLayout = ({ isMobile, movie }) => {
     return (
-        <section className='movie_header_mobile'>Mobile Layout</section>
+        <section className='movie_header_mobile'>
+            <Poster isMobile={isMobile} movie={movie} />
+            <Title movie={movie} />
+            <Overview movie={movie} />
+        </section>
     );
 };
 
