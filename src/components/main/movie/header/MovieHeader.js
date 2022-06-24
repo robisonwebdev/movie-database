@@ -14,7 +14,10 @@ const MovieHeader = ({ isMobile, movie }) => {
 
 const DesktopLayout = ({ isMobile, movie }) => {
     return (
-        <section className='movie_header_desktop'>Desktop Layout</section>
+        <section className='movie_header_desktop'>
+            <section className='left_header'></section>
+            <section className='right_header'></section>
+        </section>
     );
 };
 
