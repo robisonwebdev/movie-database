@@ -15,7 +15,9 @@ const MovieHeader = ({ isMobile, movie }) => {
 const DesktopLayout = ({ isMobile, movie }) => {
     return (
         <section className='movie_header_desktop'>
-            <section className='left_header'></section>
+            <section className='left_header'>
+                <Poster isMobile={isMobile} movie={movie} />
+            </section>
             <section className='right_header'></section>
         </section>
     );
