@@ -18,7 +18,10 @@ const DesktopLayout = ({ isMobile, movie }) => {
             <section className='left_header'>
                 <Poster isMobile={isMobile} movie={movie} />
             </section>
-            <section className='right_header'></section>
+            <section className='right_header'>
+                <Title movie={movie} />
+                <Overview movie={movie} />
+            </section>
         </section>
     );
 };
