@@ -2,3 +2,11 @@
     height: auto;
     width: 100%;
 }
+
+.movie_header_desktop {
+    display: flex;
+    gap: 15px;
+
+    height: auto;
+    width: 100%;
+}
