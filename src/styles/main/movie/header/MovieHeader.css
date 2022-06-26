@@ -6,15 +6,6 @@
     width: 100%;
 }
 
-.movie_header_desktop {
-    display: flex;
-    justify-content: center;
-    gap: 15px;
-
-    height: auto;
-    width: 90%;
-}
-
 .movie_header_mobile {
     display: flex;
     flex-direction: column;
