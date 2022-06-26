@@ -1,8 +1,6 @@
 import React from 'react';
 import DesktopLayout from './DesktopLayout';
-import Overview from '../overview/Overview';
-import Poster from '../poster/Poster';
-import Title from '../title/Title';
+import MobileLayout from './MobileLayout';
 import '../../../../styles/main/movie/header/MovieHeader.css';
 
 const MovieHeader = ({ isMobile, movie }) => {
