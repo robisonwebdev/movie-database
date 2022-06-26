@@ -1,14 +1,18 @@
 .movie_header {
+    display: flex;
+    justify-content: center;
+
     height: auto;
     width: 100%;
 }
 
 .movie_header_desktop {
     display: flex;
+    justify-content: center;
     gap: 15px;
 
     height: auto;
-    width: 100%;
+    width: 90%;
 }
 
 .movie_header_mobile {
