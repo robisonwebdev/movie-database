@@ -1,4 +1,8 @@
 import React from 'react';
+import Overview from '../overview/Overview';
+import Poster from '../poster/Poster';
+import Title from '../title/Title';
+import '../../../../styles/main/movie/header/DesktopLayout.css';
 
 const DesktopLayout = ({ isMobile, movie }) => {
     return (
