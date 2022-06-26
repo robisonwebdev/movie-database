@@ -1,8 +1,12 @@
 import React from 'react';
 
-const MobileLayout = () => {
+const MobileLayout = ({ isMobile, movie }) => {
     return (
-        <section>MobileLayout</section>
+        <section className='movie_header_mobile'>
+            <Poster isMobile={isMobile} movie={movie} />
+            <Title movie={movie} />
+            <Overview movie={movie} />
+        </section>
     );
 };
 
