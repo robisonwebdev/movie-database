@@ -1,4 +1,5 @@
 import React from 'react';
+import DesktopLayout from './DesktopLayout';
 import Overview from '../overview/Overview';
 import Poster from '../poster/Poster';
 import Title from '../title/Title';
