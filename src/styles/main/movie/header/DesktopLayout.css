@@ -1,9 +1,18 @@
 .movie_header_desktop {
     display: flex;
     justify-content: center;
-    gap: 15px;
+    gap: 30px;
 
     padding: 20px 40px;
+    height: auto;
+    width: 100%;
+}
+
+.right_header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
     height: auto;
     width: 100%;
 }
