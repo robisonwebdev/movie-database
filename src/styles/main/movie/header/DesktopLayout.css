@@ -11,7 +11,7 @@
 .right_header {
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    gap: 30px;
 
     height: auto;
     width: 100%;
