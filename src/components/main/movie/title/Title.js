@@ -6,7 +6,7 @@ const Title = ({ movie }) => {
     const { title } = movie;
 
     return (
-        <section className='movietitle'>
+        <section className='movie_title'>
             <h3>{title}</h3>
             <MovieDate releaseDate={releaseDate} format='yyyy' />
         </section>
