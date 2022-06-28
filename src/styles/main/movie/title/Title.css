@@ -1,28 +1,9 @@
-.movie_header_title {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    height: auto;
-    width: auto;
-}
-
 .movie_title {
     display: flex;
     align-items: center;
     gap: 5px;
 
     font-size: 1.4rem;
-    height: auto;
-    width: 100%;
-}
-
-.movie_mini_info {
-    display: flex;
-    align-items: center;
-    gap: 5px;
-
     height: auto;
     width: 100%;
 }
