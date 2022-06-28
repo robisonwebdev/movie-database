@@ -2,9 +2,9 @@ import React from 'react';
 import Overview from '../overview/Overview';
 import Poster from '../poster/Poster';
 import Title from '../title/Title';
-import '../../../../styles/main/movie/header/MobileLayout.css'
+import '../../../../styles/main/movie/header/MobileHeader.css'
 
-const MobileLayout = ({ isMobile, movie }) => {
+const MobileHeader = ({ isMobile, movie }) => {
     return (
         <section className='movie_header_mobile'>
             <Poster isMobile={isMobile} movie={movie} />
@@ -14,4 +14,4 @@ const MobileLayout = ({ isMobile, movie }) => {
     );
 };
 
-export default MobileLayout;
+export default MobileHeader;
