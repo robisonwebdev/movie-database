@@ -1,11 +1,11 @@
 import React from 'react';
-import MovieHeader from './header/MovieHeader';
+import MobileHeader from './header/MobileHeader';
 import '../../../styles/main/movie/MovieMobile.css';
 
 const MovieMobile = ({ isMobile, movie }) => {
     return (
         <section className='movie_mobile'>
-            <MovieHeader isMobile={isMobile} movie={movie} />
+            <MobileHeader isMobile={isMobile} movie={movie} />
             <section className='movie_mobile_main'>Main</section>
         </section>
     );
