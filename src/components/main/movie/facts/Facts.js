@@ -6,7 +6,7 @@ import Runtime from './Runtime';
 import '../../../../styles/main/movie/facts/Facts.css';
 
 const Facts = ({ movie }) => {
-    const { genres, release_dates, runtime, title } = movie;
+    const { genres, release_dates, runtime } = movie;
     const [releaseDate, setReleaseDate] = useState(null);
 
     useEffect(() => {
@@ -18,9 +18,17 @@ const Facts = ({ movie }) => {
             setReleaseDate(movieDates);
         };
     }, [release_dates]);
-    
+
     return (
-        <section className='movie_facts'>Facts</section>
+        <section className='movie_facts'>
+                <Rating releaseDate={releaseDate} />
+                &#8226;
+                <MovieDate releaseDate={releaseDate} />
+                &#8226;
+                <Genres genres={genres} />
+                &#8226;
+                <Runtime runtime={runtime} />
+        </section>
     );
 };
 
