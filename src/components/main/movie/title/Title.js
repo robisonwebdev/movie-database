@@ -1,14 +1,20 @@
 import React from 'react';
-import MovieDate from '../facts/MovieDate';
 import '../../../../styles/main/movie/title/Title.css';
 
 const Title = ({ movie }) => {
-    const { title } = movie;
+    const { release_date, title } = movie;
+
+    const getReleaseYear = () => {
+        const getDate = new Date(release_date);
+        const year = getDate.getUTCFullYear();
+
+        return `(${year})`;
+    };
 
     return (
         <section className='movie_title'>
             <h3>{title}</h3>
-            <MovieDate releaseDate={releaseDate} format='yyyy' />
+            <p>{getReleaseYear()}</p>
         </section>
     );
 };
