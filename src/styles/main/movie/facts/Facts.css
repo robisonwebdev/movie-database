@@ -1,0 +1,8 @@
+.movie_facts {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    height: auto;
+    width: 100%;
+}
