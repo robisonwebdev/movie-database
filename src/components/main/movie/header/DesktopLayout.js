@@ -1,4 +1,5 @@
 import React from 'react';
+import Facts from '../facts/Facts';
 import Overview from '../overview/Overview';
 import Poster from '../poster/Poster';
 import Title from '../title/Title';
@@ -11,7 +12,10 @@ const DesktopLayout = ({ isMobile, movie }) => {
                 <Poster isMobile={isMobile} movie={movie} />
             </section>
             <section className='right_header'>
-                <Title movie={movie} />
+                <div className='movie_header_title'>
+                    <Title movie={movie} />
+                    <Facts movie={movie} />
+                </div>                
                 <Overview movie={movie} />
             </section>
         </section>
