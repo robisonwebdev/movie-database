@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../../../styles/main/movie/title/Rating.css';
+import '../../../../styles/main/movie/facts/Rating.css';
 
 const Rating = ({ releaseDate }) => {
     const getRating = () => {

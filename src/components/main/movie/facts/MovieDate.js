@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../../../styles/main/movie/title/MovieDate.css';
+import '../../../../styles/main/movie/facts/MovieDate.css';
 
 const MovieDate = ({ releaseDate, format }) => {
     const getDate = () => {

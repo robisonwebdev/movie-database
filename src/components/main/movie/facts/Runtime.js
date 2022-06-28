@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../../../styles/main/movie/title/Runtime.css';
+import '../../../../styles/main/movie/facts/Runtime.css';
 
 const Runtime = ({ runtime }) => {
     const computeRuntime = () => {

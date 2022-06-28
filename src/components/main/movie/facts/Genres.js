@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../../../styles/main/movie/title/Genres.css';
+import '../../../../styles/main/movie/facts/Genres.css';
 
 const Genres = ({ genres }) => {
     const getGenres = () => {
