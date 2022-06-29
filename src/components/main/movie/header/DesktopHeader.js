@@ -9,16 +9,18 @@ import '../../../../styles/main/movie/header/DesktopHeader.css';
 const DesktopHeader = ({ isMobile, movie }) => {
     return (
         <section className='movie_header_desktop' style={headerBackground(movie)}>
-            <section className='left_header'>
-                <Poster isMobile={isMobile} movie={movie} />
-            </section>
-            <section className='right_header'>
-                <div className='movie_header_title'>
-                    <Title movie={movie} />
-                    <Facts movie={movie} />
-                </div>                
-                <Overview movie={movie} />
-            </section>
+            <div>
+                <section className='left_header'>
+                    <Poster isMobile={isMobile} movie={movie} />
+                </section>
+                <section className='right_header'>
+                    <div className='movie_header_title'>
+                        <Title movie={movie} />
+                        <Facts movie={movie} />
+                    </div>                
+                    <Overview movie={movie} />
+                </section>
+            </div>
         </section>
     );
 };
