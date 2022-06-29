@@ -1,12 +1,21 @@
 .movie_header_desktop {
     display: flex;
     justify-content: center;
+
+    color: #fff;    
+    height: auto;
+    width: 100%;
+}
+
+.movie_header_desktop > div {
+    display: flex;
+    justify-content: center;
     gap: 30px;
 
-    color: #fff;
     padding: 20px 40px;
     height: auto;
     width: 100%;
+    max-width: 1400px;
 }
 
 .right_header {
