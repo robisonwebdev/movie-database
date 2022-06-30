@@ -1,8 +1,9 @@
 import React from 'react';
+import '../../../../styles/main/home/searchbar/Searchbar.css';
 
 const Searchbar = () => {
     return (
-        <section>Searchbar</section>
+        <section className='home_searchbar'>Searchbar</section>
     );
 };
 
