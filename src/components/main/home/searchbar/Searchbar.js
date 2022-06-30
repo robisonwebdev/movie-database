@@ -11,8 +11,13 @@ const Searchbar = () => {
         setSearchValue(event.target.value);
     };
 
+    const handleSubmit = (event) => {
+        event.preventDefault();
+        navigate(`results/${searchValue}`);
+    };
+
     return (
-        <section className='searchbar_container'>
+        <section className='searchbar_container' onSubmit={handleSubmit}>
             <form className='searchbar'>
                 <input type='text' value={searchValue} placeholder={placeholder} onChange={handleInputChange} />
                 <button>Search</button>
