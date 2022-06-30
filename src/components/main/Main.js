@@ -31,6 +31,10 @@ const Main = () => {
                 <Route path=':personID' element={<Person />} />
             </Route>
 
+            <Route path='/results' element={<Layout />}>
+                <Route path=':searchValue' element={<Results />} />
+            </Route>
+
             <Route path='/show' element={<Layout />}>
                 <Route path=':showID' element={<Show />} />
             </Route>
