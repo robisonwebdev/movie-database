@@ -1,15 +1,13 @@
 import React from 'react';
-import ComingSoon from './ComingSoon';
-import PopularMedia from './PopularMedia';
-import Welcome from './Welcome';
+import Searchbar from './searchbar/Searchbar';
+import Welcome from './welcome/Welcome';
 import '../../../styles/main/home/Home.css';
 
 const Home = () => {
     return (
         <section className='home'>
             <Welcome />
-            <ComingSoon />
-            <PopularMedia />
+            <Searchbar />
         </section>
     );
 };
