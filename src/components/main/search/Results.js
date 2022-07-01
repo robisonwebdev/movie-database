@@ -43,10 +43,10 @@ const Results = () => {
     
     return (
         <section className='results'>
-            <ResultsCategories />
-            {loading ? null : console.log('Movie', movieResults)}
+            <ResultsCategories results={{movieResults: movieResults, peopleResults: peopleResults, showsResults: showsResults}} />
+            {/* {loading ? null : console.log('Movie', movieResults)}
             {loading ? null : console.log('People', peopleResults)}            
-            {loading ? null : console.log('shows', showsResults)}
+            {loading ? null : console.log('shows', showsResults)} */}
         </section>
     );
 };
