@@ -1,6 +1,7 @@
 import React, { useCallback, useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
+import ResultsCategories from './resultsCategories/ResultsCategories';
 import '../../../styles/main/search/Results.css';
 
 const Results = () => {
@@ -42,6 +43,7 @@ const Results = () => {
     
     return (
         <section className='results'>
+            <ResultsCategories />
             {loading ? null : console.log('Movie', movieResults)}
             {loading ? null : console.log('People', peopleResults)}            
             {loading ? null : console.log('shows', showsResults)}
