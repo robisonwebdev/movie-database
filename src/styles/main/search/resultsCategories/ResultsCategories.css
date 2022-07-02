@@ -1,3 +1,11 @@
+.results_categories {
+    display: flex;
+    flex-direction: column;
+
+    height: auto;
+    width: 100%;
+}
+
 .categories {
     display: flex;
     flex-direction: row;
@@ -7,9 +15,6 @@
     height: auto;
     width: 100%;
 }
-
-
-
 
 @media only screen and (min-width: 865px) {
     .categories {
