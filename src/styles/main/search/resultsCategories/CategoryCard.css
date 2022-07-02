@@ -1,9 +1,9 @@
 .category_card {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
+    gap: 10px;
 
     height: auto;
-    width: 100%;
+    width: auto;
 }
