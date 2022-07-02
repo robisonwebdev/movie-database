@@ -5,8 +5,8 @@ const ResultsCategories = ({ results }) => {
     const { movieResults, peopleResults, showsResults } = results;
 
     return (
-        <section className='results_categories_container'>
-            <div className='categories_title'>Search Results</div>
+        <section className='results_categories'>
+            <div className='categories_header'>Search Results</div>
             <section className='categories'></section>
         </section>
     );
