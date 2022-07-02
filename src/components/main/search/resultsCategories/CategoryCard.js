@@ -1,8 +1,9 @@
 import React from 'react';
+import '../../../../styles/main/search/resultsCategories/CategoryCard.css';
 
 const CategoryCard = () => {
     return (
-        <div>CategoryCard</div>
+        <div className='category_card'>CategoryCard</div>
     );
 };
 
