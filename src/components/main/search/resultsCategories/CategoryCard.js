@@ -1,14 +1,16 @@
 import React from 'react';
 import '../../../../styles/main/search/resultsCategories/CategoryCard.css';
 
-const CategoryCard = () => {
+const CategoryCard = ({ category, title }) => {
+    const categorySize = category.total_results;
+
     return (
         <div className='category_card'>
             <div className='category_title'>
-                <p></p>
+                <p>{title}</p>
             </div>
             <div className='category_size'>
-                <p></p>
+                <p>{categorySize}</p>
             </div>
         </div>
     );
