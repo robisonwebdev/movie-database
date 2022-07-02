@@ -6,6 +6,12 @@
     width: 100%;
 }
 
+.categories_header {
+    padding: 20px;
+    height: auto;
+    width: 100%;
+}
+
 .categories {
     display: flex;
     flex-direction: row;
