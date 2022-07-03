@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../../styles/main/search/MediaCard.css';
+import '../../../../styles/main/search/searchResults/MediaCard.css';
 
 const MediaCard = () => {
     return (
