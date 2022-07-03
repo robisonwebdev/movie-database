@@ -1,16 +1,16 @@
 import React from 'react';
 import '../../../../styles/main/search/searchFilters/FilterCard.css';
 
-const FilterCard = ({ category, title }) => {
-    const categorySize = category.total_results;
+const FilterCard = ({ filter, title }) => {
+    const filterSize = filter.total_results;
 
     return (
-        <div className='category_card'>
-            <div className='category_title'>
+        <div className='filter_card'>
+            <div className='filter_title'>
                 <p>{title}</p>
             </div>
-            <div className='category_size'>
-                <p>{categorySize}</p>
+            <div className='filter_size'>
+                <p>{filterSize}</p>
             </div>
         </div>
     );
