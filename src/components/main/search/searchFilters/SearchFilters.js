@@ -2,17 +2,17 @@ import React from 'react';
 import FilterCard from './FilterCard';
 import '../../../../styles/main/search/searchFilters/SearchFilters.css';
 
-const SearchFilters = ({ results }) => {
-    const { movieResults, peopleResults, showsResults } = results;
+const SearchFilters = ({ filters }) => {
+    const { movieResults, peopleResults, showsResults } = filters;
 
     return (
-        <section className='results_categories'>
+        <section className='search_filters'>
             {console.log(results)}
-            <div className='categories_header'>Search Results</div>
-            <section className='categories'>
-                <FilterCard category={movieResults} title='Movies' />
-                <FilterCard category={peopleResults} title='People' />
-                <FilterCard category={showsResults} title='TV Shows' />
+            <div className='filters_header'>Search Results</div>
+            <section className='filters'>
+                <FilterCard filter={movieResults} title='Movies' />
+                <FilterCard filter={peopleResults} title='People' />
+                <FilterCard filter={showsResults} title='TV Shows' />
             </section>
         </section>
     );
