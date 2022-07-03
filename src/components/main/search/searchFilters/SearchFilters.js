@@ -1,6 +1,6 @@
 import React from 'react';
 import FilterCard from './FilterCard';
-import '../../../../styles/main/search/resultsCategories/ResultsCategories.css';
+import '../../../../styles/main/search/searchFilters/SearchFilters.css';
 
 const SearchFilters = ({ results }) => {
     const { movieResults, peopleResults, showsResults } = results;
