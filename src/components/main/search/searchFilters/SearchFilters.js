@@ -1,8 +1,8 @@
 import React from 'react';
-import CategoryCard from './CategoryCard';
+import FilterCard from './FilterCard';
 import '../../../../styles/main/search/resultsCategories/ResultsCategories.css';
 
-const ResultsCategories = ({ results }) => {
+const SearchFilters = ({ results }) => {
     const { movieResults, peopleResults, showsResults } = results;
 
     return (
@@ -10,12 +10,12 @@ const ResultsCategories = ({ results }) => {
             {console.log(results)}
             <div className='categories_header'>Search Results</div>
             <section className='categories'>
-                <CategoryCard category={movieResults} title='Movies' />
-                <CategoryCard category={peopleResults} title='People' />
-                <CategoryCard category={showsResults} title='TV Shows' />
+                <FilterCard category={movieResults} title='Movies' />
+                <FilterCard category={peopleResults} title='People' />
+                <FilterCard category={showsResults} title='TV Shows' />
             </section>
         </section>
     );
 };
 
-export default ResultsCategories;
+export default SearchFilters;
