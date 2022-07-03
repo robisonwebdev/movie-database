@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../../../styles/main/search/resultsCategories/CategoryCard.css';
+import '../../../../styles/main/search/searchFilters/FilterCard.css';
 
 const FilterCard = ({ category, title }) => {
     const categorySize = category.total_results;
