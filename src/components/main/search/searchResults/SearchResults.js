@@ -1,8 +1,9 @@
 import React from 'react';
+import '../../../../styles/main/search/searchResults/SearchResults.css';
 
 const SearchResults = () => {
     return (
-        <section>SearchResults</section>
+        <section className='search_results_container'>SearchResults</section>
     );
 };
 
