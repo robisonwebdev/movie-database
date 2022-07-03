@@ -1,7 +1,7 @@
 import React from 'react';
 import '../../../../styles/main/search/resultsCategories/CategoryCard.css';
 
-const CategoryCard = ({ category, title }) => {
+const FilterCard = ({ category, title }) => {
     const categorySize = category.total_results;
 
     return (
@@ -16,4 +16,4 @@ const CategoryCard = ({ category, title }) => {
     );
 };
 
-export default CategoryCard;
+export default FilterCard;
