@@ -7,3 +7,14 @@
     height: auto;
     width: auto;
 }
+
+.filter_title {
+    cursor: pointer;
+}
+
+@media only screen and (min-width: 865px) {
+    .filter_card {
+        justify-content: space-between;
+        width: 100%;
+    }
+}
