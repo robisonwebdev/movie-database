@@ -1,0 +1,7 @@
+.media_card {
+    display: flex;
+    align-items: center;
+
+    height: auto;
+    width: 100%;
+}
