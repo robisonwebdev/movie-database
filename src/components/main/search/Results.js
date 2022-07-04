@@ -8,6 +8,7 @@ import '../../../styles/main/search/Results.css';
 const Results = () => {
     const { searchValue } = useParams();
     const [loading, setLoading] = useState(true);
+    const [selectedResults, setSelectedResults] = useState([]);
     const [movieResults, setMovieResults] = useState([]);
     const [peopleResults, setPeopleResults] = useState([]);
     const [showsResults, setShowsResults] = useState([]);
@@ -33,6 +34,7 @@ const Results = () => {
             setMovieResults(movie_Data);
             setPeopleResults(people_Data);
             setShowsResults(shows_Data);
+            setSelectedResults(movie_Data);
             setLoading(false);
         }))
         .catch(err => console.log(err))
@@ -46,9 +48,9 @@ const Results = () => {
         <section className='results'>
             <SearchFilters filters={{movieResults: movieResults, peopleResults: peopleResults, showsResults: showsResults}} />
             <SearchResults />
-            {/* {loading ? null : console.log('Movie', movieResults)}
-            {loading ? null : console.log('People', peopleResults)}            
-            {loading ? null : console.log('shows', showsResults)} */}
+            {loading ? null : console.log('Current Results:', selectedResults)}
+            {/* {loading ? null : console.log('People', peopleResults)}             */}
+            {/* {loading ? null : console.log('shows', showsResults)} */}
         </section>
     );
 };
