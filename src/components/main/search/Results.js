@@ -46,9 +46,9 @@ const Results = () => {
     return (
         <section className='results'>
             <SearchFilters filters={{movieResults: movieResults, peopleResults: peopleResults, showsResults: showsResults}} setSelectedResults={setSelectedResults} />
-            <SearchResults />
+            <SearchResults results={{movieResults: movieResults, peopleResults: peopleResults, showsResults: showsResults}} selectedResults={selectedResults} />
             {loading ? null : console.log('Current Results:', selectedResults)}
-            {/* {loading ? null : console.log('People', peopleResults)}             */}
+            {/* {loading ? null : console.log('People', peopleResults)} */}
             {/* {loading ? null : console.log('shows', showsResults)} */}
         </section>
     );
