@@ -9,5 +9,6 @@
 @media only screen and (min-width: 865px) {
     .results {
         flex-direction: row;
+        padding: 0 20px;
     }
 }
