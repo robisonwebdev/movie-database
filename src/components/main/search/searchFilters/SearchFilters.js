@@ -11,7 +11,6 @@ const SearchFilters = ({ filters, setSelectedResults }) => {
 
     return (
         <section className='search_filters'>
-            {console.log(filters)}
             <div className='filters_header'>Search Results</div>
             <section className='filters'>
                 <FilterCard filter={movieResults} handleOnClick={handleOnClick} title='Movies' />
