@@ -26,7 +26,7 @@
 
 @media only screen and (min-width: 865px) {
     .search_filters {
-        min-width: 300px;
+        max-width: 260px;
     }
 
     .filters {
