@@ -9,14 +9,6 @@
     max-width: 70px;
 }
 
-.person_image {
-    display: flex;
-    align-items: center;
-
-    height: 100%;
-    width: 100%;
-}
-
 .person_image img {
     height: 70px;
     width: 70px;
