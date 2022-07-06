@@ -36,3 +36,20 @@
     height: auto;
     width: 100%;
 }
+
+.person_known_for {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+
+    height: auto;
+    width: 100%;
+}
+
+.person_known_for p:last-child {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
