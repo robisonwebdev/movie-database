@@ -5,6 +5,18 @@ import '../../../../styles/main/search/searchResults/PersonCard.css';
 const PersonCard = ({ person }) => {
     const { known_for, known_for_department, name, profile_path } = person;
 
+    const getKnownFor = () => {
+        const knownForArray = [];
+
+        if (known_for.length < 1) return null;
+
+        known_for?.forEach(item => {
+            knownForArray.push(item.title || item.name);
+        });
+
+        return knownForArray.join(', ');
+    };
+
     const getName = () => {
         if (typeof name !== 'string') return 'Unknown';
 
@@ -21,7 +33,7 @@ const PersonCard = ({ person }) => {
 
     return (
         <section className='person_card'>
-            {console.log(known_for_department)}
+            {console.log(known_for)}
             <div className='person_image'>
                 {getProfileImage()}
             </div>
@@ -31,6 +43,8 @@ const PersonCard = ({ person }) => {
                 </div>
                 <div className='person_known_for'>
                     <p>{known_for_department}</p>
+                    &#8226;
+                    <p>{getKnownFor()}</p>
                 </div>
             </div>
         </section>
