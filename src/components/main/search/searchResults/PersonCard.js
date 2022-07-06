@@ -21,7 +21,7 @@ const PersonCard = ({ person }) => {
 
     return (
         <section className='person_card'>
-            {console.log(person)}
+            {console.log(known_for_department)}
             <div className='person_image'>
                 {getProfileImage()}
             </div>
@@ -29,7 +29,9 @@ const PersonCard = ({ person }) => {
                 <div className='person_name'>
                     <p>{getName()}</p>
                 </div>
-                <div className='person_known_for'></div>
+                <div className='person_known_for'>
+                    <p>{known_for_department}</p>
+                </div>
             </div>
         </section>
     );
