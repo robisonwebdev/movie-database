@@ -1,6 +1,7 @@
 import React from 'react';
 import MediaCard from './MediaCard';
 import PersonCard from './PersonCard';
+import ShowCard from './ShowCard';
 import '../../../../styles/main/search/searchResults/SearchResults.css';
 
 const SearchResults = ({ results, selectedResults }) => {
@@ -14,8 +15,8 @@ const SearchResults = ({ results, selectedResults }) => {
         return <PersonCard key={person.id} person={person} />
     });
 
-    const mapTVShows = showsResults.results?.map(media => {
-        return <MediaCard key={media.id} media={media} />
+    const mapTVShows = showsResults.results?.map(show => {
+        return <ShowCard key={show.id} show={show} />
     });
 
     const showResults = () => {
