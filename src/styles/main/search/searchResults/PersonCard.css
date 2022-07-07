@@ -7,7 +7,7 @@
     width: 100%;
 }
 
-.person_image {
+.person_card_image {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -18,17 +18,17 @@
     max-width: 70px;
 }
 
-.person_image img {
+.person_card_image img {
     height: 70px;
     width: 70px;
 }
 
-.person_image svg {
+.person_card_image svg {
     height: 70px;
     width: 70px;
 }
 
-.person_info {
+.person_card_info {
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -37,7 +37,7 @@
     width: 100%;
 }
 
-.person_known_for {
+.person_card_known_for {
     display: flex;
     align-items: center;
     gap: 5px;
@@ -46,7 +46,7 @@
     width: 100%;
 }
 
-.person_known_for p:last-child {
+.person_card_known_for p:last-child {
     display: -webkit-box;
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
