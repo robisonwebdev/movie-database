@@ -1,19 +1,18 @@
 import React from 'react';
 import MovieIcon from '@mui/icons-material/Movie';
-import '../../../../styles/main/search/searchResults/MediaCard.css';
+import '../../../../styles/main/search/searchResults/MovieCard.css';
 
-const MediaCard = ({ media }) => {
-    const { first_air_date, name, overview, release_date, poster_path, title } = media;
+const MovieCard = ({ movie }) => {
+    const { overview, release_date, poster_path, title } = movie;
 
     const getDate = () => {
         const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-        const findDate = first_air_date || release_date;
-        const getDate = new Date(findDate);
+        const getDate = new Date(release_date);
         const year = getDate.getUTCFullYear();
         const month = getDate.getUTCMonth();
         const day = getDate.getUTCDate();
 
-        if (findDate === undefined) return null;
+        if (release_date === undefined) return null;
 
         return `${monthNames[month]} ${day}, ${year}`;
     };
@@ -33,23 +32,22 @@ const MediaCard = ({ media }) => {
     };
 
     const getTitle = () => {
-        if (name === '' || name === null) return null;
         if (title === '' || title === null) return null;        
 
-        return name || title;
+        return title;
     };
 
     return (
-        <section className='media_card'>
-            <div className='card_image'>
+        <section className='movie_card'>
+            <div className='movie_poster'>
                 {getPoster()}
             </div>
-            <div className='card_info'>
-                <div className='card_title'>
+            <div className='movie_info'>
+                <div className='movie_title'>
                     <h4>{getTitle()}</h4>
                     <p>{getDate()}</p>
                 </div>
-                <div className='card_overview'>
+                <div className='movie_overview'>
                     <p>{getOverview()}</p>
                 </div>
             </div>
@@ -57,4 +55,4 @@ const MediaCard = ({ media }) => {
     );
 };
 
-export default MediaCard;
+export default MovieCard;
