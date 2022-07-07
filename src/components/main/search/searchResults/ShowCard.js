@@ -1,9 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import MovieIcon from '@mui/icons-material/Movie';
 import '../../../../styles/main/search/searchResults/ShowCard.css'
 
 const ShowCard = ({ show }) => {
-    const { first_air_date, name, overview, poster_path } = show;
+    const { first_air_date, id,  name, overview, poster_path } = show;
+
+    const linkTo = `/show/${id}`;
 
     const getDate = () => {
         const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
@@ -40,11 +43,15 @@ const ShowCard = ({ show }) => {
     return (
         <section className='show_card'>
             <div className='show_card_poster'>
-                {getPoster()}
+                <Link to={linkTo}>
+                    {getPoster()}
+                </Link>
             </div>
             <div className='show_card_info'>
                 <div className='show_card_name'>
-                    <h4>{getName()}</h4>
+                    <Link to={linkTo}>
+                        <h4>{getName()}</h4>
+                    </Link>
                     <p>{getDate()}</p>
                 </div>
                 <div className='show_card_overview'>
