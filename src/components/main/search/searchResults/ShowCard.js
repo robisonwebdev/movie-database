@@ -39,15 +39,15 @@ const ShowCard = ({ show }) => {
     
     return (
         <section className='show_card'>
-            <div className='show_poster'>
+            <div className='show_card_poster'>
                 {getPoster()}
             </div>
-            <div className='show_info'>
-                <div className='show_name'>
+            <div className='show_card_info'>
+                <div className='show_card_name'>
                     <h4>{getName()}</h4>
                     <p>{getDate()}</p>
                 </div>
-                <div className='show_overview'>
+                <div className='show_card_overview'>
                     <p>{getOverview()}</p>
                 </div>
             </div>
