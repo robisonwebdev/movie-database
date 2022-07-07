@@ -39,15 +39,15 @@ const MovieCard = ({ movie }) => {
 
     return (
         <section className='movie_card'>
-            <div className='movie_poster'>
+            <div className='movie_card_poster'>
                 {getPoster()}
             </div>
-            <div className='movie_info'>
+            <div className='movie_card_info'>
                 <div className='movie_card_title'>
                     <h4>{getTitle()}</h4>
                     <p>{getDate()}</p>
                 </div>
-                <div className='movie_overview'>
+                <div className='movie_card_overview'>
                     <p>{getOverview()}</p>
                 </div>
             </div>
