@@ -7,13 +7,13 @@
     width: 100%;
 }
 
-.show_poster img {
+.show_card_poster img {
     object-fit: contain;
     height: 141px;
     width: 94px;
 }
 
-.show_info {
+.show_card_info {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -21,7 +21,7 @@
     padding: 15px;
 }
 
-.show_overview {
+.show_card_overview {
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
