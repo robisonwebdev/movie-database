@@ -43,7 +43,7 @@ const MovieCard = ({ movie }) => {
                 {getPoster()}
             </div>
             <div className='movie_info'>
-                <div className='movie_title'>
+                <div className='movie_card_title'>
                     <h4>{getTitle()}</h4>
                     <p>{getDate()}</p>
                 </div>
