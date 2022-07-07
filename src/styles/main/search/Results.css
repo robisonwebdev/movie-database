@@ -6,6 +6,11 @@
     width: 100%;
 }
 
+.results a {
+    color: #000;
+    text-decoration: none;
+}
+
 @media only screen and (min-width: 865px) {
     .results {
         flex-direction: row;
