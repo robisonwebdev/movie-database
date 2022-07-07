@@ -1,9 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import MovieIcon from '@mui/icons-material/Movie';
 import '../../../../styles/main/search/searchResults/MovieCard.css';
 
 const MovieCard = ({ movie }) => {
-    const { overview, release_date, poster_path, title } = movie;
+    const { id, overview, release_date, poster_path, title } = movie;
+
+    const linkTo = `/movie/${id}`;
 
     const getDate = () => {
         const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
@@ -40,11 +43,15 @@ const MovieCard = ({ movie }) => {
     return (
         <section className='movie_card'>
             <div className='movie_card_poster'>
-                {getPoster()}
+                <Link to={linkTo}>
+                    {getPoster()}
+                </Link>
             </div>
             <div className='movie_card_info'>
                 <div className='movie_card_title'>
-                    <h4>{getTitle()}</h4>
+                    <Link to={linkTo}>
+                        <h4>{getTitle()}</h4>
+                    </Link>
                     <p>{getDate()}</p>
                 </div>
                 <div className='movie_card_overview'>
