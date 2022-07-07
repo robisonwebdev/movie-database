@@ -1,5 +1,5 @@
 import React from 'react';
-import MediaCard from './MediaCard';
+import MovieCard from './MovieCard';
 import PersonCard from './PersonCard';
 import ShowCard from './ShowCard';
 import '../../../../styles/main/search/searchResults/SearchResults.css';
@@ -7,8 +7,8 @@ import '../../../../styles/main/search/searchResults/SearchResults.css';
 const SearchResults = ({ results, selectedResults }) => {
     const  { movieResults, peopleResults, showsResults } = results;
 
-    const mapMovies = movieResults.results?.map(media => {
-        return <MediaCard key={media.id} media={media} />
+    const mapMovies = movieResults.results?.map(movie => {
+        return <MovieCard key={movie.id} movie={movie} />
     });
 
     const mapPeople = peopleResults.results?.map(person => {
