@@ -1,9 +1,12 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import PersonIcon from '@mui/icons-material/Person';
 import '../../../../styles/main/search/searchResults/PersonCard.css';
 
 const PersonCard = ({ person }) => {
-    const { known_for, known_for_department, name, profile_path } = person;
+    const { id, known_for, known_for_department, name, profile_path } = person;
+
+    const linkTo = `/person/${id}`;
 
     const getKnownFor = () => {
         const knownForArray = [];
@@ -33,13 +36,16 @@ const PersonCard = ({ person }) => {
 
     return (
         <section className='person_card'>
-            {console.log(known_for)}
             <div className='person_image'>
-                {getProfileImage()}
+                <Link to={linkTo}>
+                    {getProfileImage()}
+                </Link>
             </div>
             <div className='person_info'>
                 <div className='person_name'>
-                    <p>{getName()}</p>
+                    <Link to={linkTo}>
+                        <p>{getName()}</p>
+                    </Link>
                 </div>
                 <div className='person_known_for'>
                     <p>{known_for_department}</p>
