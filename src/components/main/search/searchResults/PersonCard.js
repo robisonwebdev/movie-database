@@ -36,18 +36,18 @@ const PersonCard = ({ person }) => {
 
     return (
         <section className='person_card'>
-            <div className='person_image'>
+            <div className='person_card_image'>
                 <Link to={linkTo}>
                     {getProfileImage()}
                 </Link>
             </div>
-            <div className='person_info'>
-                <div className='person_name'>
+            <div className='person_card_info'>
+                <div className='person_card_name'>
                     <Link to={linkTo}>
                         <p>{getName()}</p>
                     </Link>
                 </div>
-                <div className='person_known_for'>
+                <div className='person_card_known_for'>
                     <p>{known_for_department}</p>
                     &#8226;
                     <p>{getKnownFor()}</p>
