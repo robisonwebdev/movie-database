@@ -1,10 +1,10 @@
 import React from 'react';
-import '../../../../styles/main/search/searchResults/ShowsCard.css'
+import '../../../../styles/main/search/searchResults/ShowCard.css'
 
-const ShowsCard = () => {
+const ShowCard = ({ show }) => {
     return (
-        <section className='shows_card'>ShowsCard</section>
+        <section className='show_card'>ShowCard</section>
     );
 };
 
-export default ShowsCard;
+export default ShowCard;
