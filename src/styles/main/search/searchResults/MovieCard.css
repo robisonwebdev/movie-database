@@ -7,6 +7,12 @@
     width: 100%;
 }
 
+.movie_card_poster {
+    background: #dbdbdb;
+    height: 141px;
+    width: 94px;
+}
+
 .movie_card_poster img {
     object-fit: contain;
     height: 141px;
