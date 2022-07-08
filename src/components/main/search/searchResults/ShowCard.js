@@ -15,7 +15,7 @@ const ShowCard = ({ show }) => {
         const month = getDate.getUTCMonth();
         const day = getDate.getUTCDate();
 
-        if (first_air_date === undefined) return null;
+        if (first_air_date === undefined || first_air_date === '') return null;
 
         return `${monthNames[month]} ${day}, ${year}`;
     };
@@ -42,6 +42,7 @@ const ShowCard = ({ show }) => {
     
     return (
         <section className='show_card'>
+            {console.log(show)}
             <div className='show_card_poster'>
                 <Link to={linkTo}>
                     {getPoster()}
