@@ -13,6 +13,14 @@
     width: 94px;
 }
 
+.movie_card_poster a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 141px;
+    width: 94px;
+}
+
 .movie_card_poster img {
     object-fit: contain;
     height: 141px;
