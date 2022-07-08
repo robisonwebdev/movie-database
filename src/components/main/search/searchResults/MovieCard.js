@@ -15,7 +15,7 @@ const MovieCard = ({ movie }) => {
         const month = getDate.getUTCMonth();
         const day = getDate.getUTCDate();
 
-        if (release_date === undefined) return null;
+        if (release_date === undefined || release_date === '') return null;
 
         return `${monthNames[month]} ${day}, ${year}`;
     };
