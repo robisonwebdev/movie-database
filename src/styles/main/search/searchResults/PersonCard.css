@@ -3,11 +3,13 @@
     align-items: center;
     gap: 10px;
 
+    
     height: auto;
     width: 100%;
 }
 
 .person_card_image {
+    border-radius: 8px;
     background: #dbdbdb;
     height: 70px;
     width: 70px;
@@ -23,6 +25,7 @@
 }
 
 .person_card_image img {
+    border-radius: 8px;
     object-fit: contain;
     height: 70px;
     width: 70px;
