@@ -27,6 +27,12 @@
     width: 94px;
 }
 
+.movie_card_poster svg {
+    color: #b5b5b5;
+    height: 70px;
+    width: 47px;
+}
+
 .movie_card_info {
     display: flex;
     flex-direction: column;
