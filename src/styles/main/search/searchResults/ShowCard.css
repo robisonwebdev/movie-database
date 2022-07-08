@@ -8,10 +8,15 @@
 }
 
 .show_card_poster {
+    background: #dbdbdb;
+    height: 141px;
+    width: 94px;
+}
+
+.show_card_poster a {
     display: flex;
     align-items: center;
     justify-content: center;
-
     height: 141px;
     width: 94px;
 }
@@ -23,6 +28,7 @@
 }
 
 .show_card_poster svg {
+    color: #b5b5b5;
     height: 70px;
     width: 47px;
 }
