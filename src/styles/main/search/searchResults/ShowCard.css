@@ -7,6 +7,15 @@
     width: 100%;
 }
 
+.show_card_poster {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    height: 141px;
+    width: 94px;
+}
+
 .show_card_poster img {
     object-fit: contain;
     height: 141px;
@@ -14,8 +23,8 @@
 }
 
 .show_card_poster svg {
-    height: 141px;
-    width: 94px;
+    height: 70px;
+    width: 47px;
 }
 
 .show_card_info {
