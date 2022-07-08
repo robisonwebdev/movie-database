@@ -8,24 +8,30 @@
 }
 
 .person_card_image {
+    background: #dbdbdb;
+    height: 70px;
+    width: 70px;
+}
+
+.person_card_image a {
     display: flex;
     justify-content: center;
     align-items: center;
 
-    height: 100%;
-    max-height: 70px;
-    width: 100%;
-    max-width: 70px;
+    height: 70px;
+    width: 70px;
 }
 
 .person_card_image img {
+    object-fit: contain;
     height: 70px;
     width: 70px;
 }
 
 .person_card_image svg {
-    height: 70px;
-    width: 70px;
+    color: #b5b5b5;
+    height: 40px;
+    width: 40px;
 }
 
 .person_card_info {
