@@ -1,6 +1,7 @@
 import React, { useCallback, useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import axios from 'axios';
+import Searchbar from './searchBar/SearchBar';
 import SearchFilters from './searchFilters/SearchFilters';
 import SearchResults from './searchResults/SearchResults';
 import '../../../styles/main/search/Results.css';
@@ -45,11 +46,9 @@ const Results = () => {
     
     return (
         <section className='results'>
+            <Searchbar searchValue={searchValue} />
             <SearchFilters filters={{movieResults: movieResults, peopleResults: peopleResults, showsResults: showsResults}} setSelectedResults={setSelectedResults} />
             <SearchResults results={{movieResults: movieResults, peopleResults: peopleResults, showsResults: showsResults}} selectedResults={selectedResults} />
-            {/* {loading ? null : console.log('Current Results:', selectedResults)} */}
-            {/* {loading ? null : console.log('People', peopleResults)} */}
-            {/* {loading ? null : console.log('shows', showsResults)} */}
         </section>
     );
 };
