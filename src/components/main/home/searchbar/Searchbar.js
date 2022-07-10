@@ -13,7 +13,7 @@ const Searchbar = () => {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        navigate(`results/${searchValue}`);
+        navigate(`/results?query=${searchValue}`);
     };
 
     return (
