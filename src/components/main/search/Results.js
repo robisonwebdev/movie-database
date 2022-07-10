@@ -1,5 +1,5 @@
 import React, { useCallback, useEffect, useState } from 'react';
-import { useParams } from 'react-router-dom';
+import { useSearchParams } from 'react-router-dom';
 import axios from 'axios';
 import SearchBar from './searchBar/SearchBar';
 import SearchFilters from './searchFilters/SearchFilters';
@@ -7,18 +7,18 @@ import SearchResults from './searchResults/SearchResults';
 import '../../../styles/main/search/Results.css';
 
 const Results = () => {
-    const { searchValue } = useParams();
     const [loading, setLoading] = useState(true);
-    const [searchBarValue, setSearchBarValue] = useState(searchValue)
-    const [selectedResults, setSelectedResults] = useState('Movies');
     const [movieResults, setMovieResults] = useState([]);
     const [peopleResults, setPeopleResults] = useState([]);
+    const [selectedResults, setSelectedResults] = useState('Movies');
     const [showsResults, setShowsResults] = useState([]);
+    const [searchParams, setSearchParams] = useSearchParams();
+    const searchValue = searchParams.get('query');
 
     const fetchData = useCallback(() => {
-        const movie_API = `https://api.themoviedb.org/3/search/movie?api_key=9289aca3a6413b200619b263ac82e4c0&language=en-US&query=${searchBarValue}&page=1&include_adult=false`;
-        const people_API = `https://api.themoviedb.org/3/search/person?api_key=9289aca3a6413b200619b263ac82e4c0&language=en-US&query=${searchBarValue}&page=1&include_adult=false`;
-        const shows_API = `https://api.themoviedb.org/3/search/tv?api_key=9289aca3a6413b200619b263ac82e4c0&language=en-US&page=1&query=${searchBarValue}&include_adult=false`;
+        const movie_API = `https://api.themoviedb.org/3/search/movie?api_key=9289aca3a6413b200619b263ac82e4c0&language=en-US&query=${searchValue}&page=1&include_adult=false`;
+        const people_API = `https://api.themoviedb.org/3/search/person?api_key=9289aca3a6413b200619b263ac82e4c0&language=en-US&query=${searchValue}&page=1&include_adult=false`;
+        const shows_API = `https://api.themoviedb.org/3/search/tv?api_key=9289aca3a6413b200619b263ac82e4c0&language=en-US&page=1&query=${searchValue}&include_adult=false`;
 
         const getMovie_Data = axios.get(movie_API);
         const getPeople_Data = axios.get(people_API);
@@ -39,15 +39,15 @@ const Results = () => {
             setLoading(false);
         }))
         .catch(err => console.log(err))
-    }, [searchBarValue]);
-
+    }, [searchValue]);
+    
     useEffect(() => {
         fetchData();
-    }, [fetchData, searchBarValue]);
+    }, [fetchData]);
     
     return (
         <section className='results'>
-            <SearchBar searchBarValue={searchBarValue} setSearchBarValue={setSearchBarValue} />
+            <SearchBar setSearchParams={setSearchParams} value={searchValue} />
             <SearchFilters filters={{movieResults: movieResults, peopleResults: peopleResults, showsResults: showsResults}} setSelectedResults={setSelectedResults} />
             <SearchResults results={{movieResults: movieResults, peopleResults: peopleResults, showsResults: showsResults}} selectedResults={selectedResults} />
         </section>
