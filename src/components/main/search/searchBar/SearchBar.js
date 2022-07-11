@@ -19,7 +19,9 @@ const SearchBar = ({ setSearchParams, value }) => {
         <section className='results_search_bar_container'>
             <form className='results_search_bar' onSubmit={handleSubmit}>
                 <input type='text' value={searchValue} onChange={handleInputChange} />
-                <SearchIcon />
+                <button type='submit'>
+                    <SearchIcon />
+                </button>
             </form>
         </section>
     );
