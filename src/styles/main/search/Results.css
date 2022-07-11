@@ -1,6 +1,7 @@
 .results {
     display: flex;
     flex-direction: column;
+    gap: 15px;
 
     height: 100%;
     width: 100%;
@@ -11,10 +12,19 @@
     text-decoration: none;
 }
 
+.results_area_1 {
+    height: auto;
+    width: 100%;
+}
+
 @media only screen and (min-width: 865px) {
     .results {
-        flex-direction: row;
         padding: 0 20px;
         max-width: 1400px;
+    }
+
+    .results_area_2 {
+        display: flex;
+        flex-direction: row;
     }
 }
