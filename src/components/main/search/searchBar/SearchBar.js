@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import SearchIcon from '@mui/icons-material/Search';
 import '../../../../styles/main/search/searchBar/SearchBar.css';
 
 const SearchBar = ({ setSearchParams, value }) => {
@@ -18,7 +19,7 @@ const SearchBar = ({ setSearchParams, value }) => {
         <section className='results_search_bar_container'>
             <form className='results_search_bar' onSubmit={handleSubmit}>
                 <input type='text' value={searchValue} onChange={handleInputChange} />
-                <button>Search</button>
+                <SearchIcon />
             </form>
         </section>
     );
