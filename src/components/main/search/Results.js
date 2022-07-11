@@ -47,9 +47,13 @@ const Results = () => {
     
     return (
         <section className='results'>
-            <SearchBar setSearchParams={setSearchParams} value={searchValue} />
-            <SearchFilters filters={{movieResults: movieResults, peopleResults: peopleResults, showsResults: showsResults}} setSelectedResults={setSelectedResults} />
-            <SearchResults results={{movieResults: movieResults, peopleResults: peopleResults, showsResults: showsResults}} selectedResults={selectedResults} />
+            <div className='results_area_1'>
+                <SearchBar setSearchParams={setSearchParams} value={searchValue} />
+            </div>
+            <div className='results_area_2'>
+                <SearchFilters filters={{movieResults: movieResults, peopleResults: peopleResults, showsResults: showsResults}} setSelectedResults={setSelectedResults} />
+                <SearchResults results={{movieResults: movieResults, peopleResults: peopleResults, showsResults: showsResults}} selectedResults={selectedResults} />
+            </div>            
         </section>
     );
 };
