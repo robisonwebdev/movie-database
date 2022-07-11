@@ -1,5 +1,6 @@
 import React from 'react';
 import MovieCard from './MovieCard';
+import Pagination from '../pagination/Pagination';
 import PersonCard from './PersonCard';
 import ShowCard from './ShowCard';
 import '../../../../styles/main/search/searchResults/SearchResults.css';
@@ -35,6 +36,7 @@ const SearchResults = ({ results, selectedResults }) => {
     return (
         <section className='search_results_container'>
             {showResults()}
+            <Pagination />
         </section>
     );
 };
