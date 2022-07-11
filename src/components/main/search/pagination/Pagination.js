@@ -1,8 +1,9 @@
 import React from 'react';
+import '../../../../styles/main/search/pagination/Pagination.css';
 
 const Pagination = () => {
     return (
-        <section>Pagination</section>
+        <section className='pagination'>Pagination</section>
     );
 };
 
