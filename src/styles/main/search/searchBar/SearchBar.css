@@ -1,0 +1,29 @@
+.results_search_bar_container {
+    padding: 0 20px;
+    height: auto;
+    width: 100%;
+}
+
+.results_search_bar {
+    display: flex;
+
+    height: auto;
+    width: 100%;
+}
+
+.results_search_bar input {
+    border: 1px solid black;
+    border-right: none;
+    width: 100%;
+}
+
+.results_search_bar button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #fff;
+    border: 1px solid black;
+    border-left: none;
+    cursor: pointer;
+}
