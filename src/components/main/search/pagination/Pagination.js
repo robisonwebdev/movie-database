@@ -1,10 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Pagination } from '@mui/material';
 import '../../../../styles/main/search/pagination/Pagination.css';
 
-const Pagination = () => {
+const ResultsPagination = ({ count, page, setPage }) => {
+    const handleChange = (value) => {
+        setPage(value);
+    };
+
     return (
-        <section className='pagination'>Pagination</section>
+        <section className='pagination'>
+            <Pagination count={count} page={page} onChange={handleChange} />
+        </section>
     );
 };
 
-export default Pagination;
+export default ResultsPagination;
