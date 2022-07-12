@@ -1,11 +1,11 @@
 import React from 'react';
 import MovieCard from './MovieCard';
-import Pagination from '../pagination/Pagination';
+import ResultsPagination from '../pagination/ResultsPagination';
 import PersonCard from './PersonCard';
 import ShowCard from './ShowCard';
 import '../../../../styles/main/search/searchResults/SearchResults.css';
 
-const SearchResults = ({ results, selectedResults }) => {
+const SearchResults = ({ page, setPage, results, selectedResults }) => {
     const  { movieResults, peopleResults, showsResults } = results;
 
     const mapMovies = movieResults.results?.map(movie => {
@@ -23,11 +23,26 @@ const SearchResults = ({ results, selectedResults }) => {
     const showResults = () => {
         switch (selectedResults) {
             case 'Movies':
-                return mapMovies;
+                return (
+                    <>
+                        {mapMovies}
+                        <ResultsPagination count={movieResults.total_pages} page={page} setPage={setPage} />
+                    </>
+                );
             case 'People':
-                return mapPeople;
+                return (
+                    <>
+                        {mapPeople}
+                        <ResultsPagination count={peopleResults.total_pages} page={page} setPage={setPage} />
+                    </>
+                )
             case 'TV Shows':
-                return mapTVShows
+                return (
+                    <>
+                        {mapTVShows}
+                        <ResultsPagination count={showsResults.total_pages} page={page} setPage={setPage} />
+                    </>
+                )
             default:
                 break;
         }
@@ -36,7 +51,6 @@ const SearchResults = ({ results, selectedResults }) => {
     return (
         <section className='search_results_container'>
             {showResults()}
-            <Pagination />
         </section>
     );
 };
