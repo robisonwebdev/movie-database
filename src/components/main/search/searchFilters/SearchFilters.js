@@ -2,10 +2,11 @@ import React from 'react';
 import FilterCard from './FilterCard';
 import '../../../../styles/main/search/searchFilters/SearchFilters.css';
 
-const SearchFilters = ({ filters, setSelectedResults }) => {
+const SearchFilters = ({ filters, setPage, setSelectedResults }) => {
     const { movieResults, peopleResults, showsResults } = filters;
 
     const handleOnClick = (selected) => {
+        setPage(1);
         setSelectedResults(selected);
     };
 
