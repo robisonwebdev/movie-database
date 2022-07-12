@@ -1,6 +1,6 @@
 import React from 'react';
 import { Pagination } from '@mui/material';
-import '../../../../styles/main/search/pagination/Pagination.css';
+import '../../../../styles/main/search/pagination/ResultsPagination.css';
 
 const ResultsPagination = ({ count, page, setPage }) => {
     const handleChange = (value) => {
