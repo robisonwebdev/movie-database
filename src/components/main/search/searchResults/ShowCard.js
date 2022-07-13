@@ -42,7 +42,6 @@ const ShowCard = ({ show }) => {
     
     return (
         <section className='show_card'>
-            {console.log(show)}
             <div className='show_card_poster'>
                 <Link to={linkTo}>
                     {getPoster()}
