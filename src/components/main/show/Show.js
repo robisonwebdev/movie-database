@@ -10,6 +10,14 @@ const Show = () => {
     const [showData, setShowData] = useState([]);
     const [width, setWidth] = useState(window.innerWidth);
 
+    const fetchData = useCallback(() => {
+
+    }, []);
+
+    useEffect(() => {
+        fetchData();
+    }, [fetchData]);
+
     return (
         <section className='show'>Show</section>
     );
