@@ -1,8 +1,9 @@
 import React from 'react';
+import '../../../../styles/main/show/header/MobileHeader.css';
 
 const MobileHeader = () => {
     return (
-        <section>MobileHeader</section>
+        <section className='show_mobile_header'>MobileHeader</section>
     );
 };
 
