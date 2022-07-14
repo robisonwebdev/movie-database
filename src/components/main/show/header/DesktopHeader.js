@@ -1,8 +1,9 @@
 import React from 'react';
+import '../../../../styles/main/show/header/DesktopHeader.css';
 
 const DesktopHeader = () => {
     return (
-        <section>DesktopHeader</section>
+        <section className='show_desktop_header'>DesktopHeader</section>
     );
 };
 
