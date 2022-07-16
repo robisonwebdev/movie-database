@@ -1,8 +1,9 @@
 import React from 'react';
+import '../../../styles/main/show/ShowMobile.css';
 
 const ShowMobile = () => {
     return (
-        <section>ShowMobile</section>
+        <section className='show_mobile'>ShowMobile</section>
     );
 };
 
