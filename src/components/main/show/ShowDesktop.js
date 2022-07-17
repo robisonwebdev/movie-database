@@ -2,7 +2,7 @@ import React from 'react';
 import DesktopHeader from './header/DesktopHeader';
 import '../../../styles/main/show/ShowDesktop.css';
 
-const ShowDesktop = () => {
+const ShowDesktop = ({ show }) => {
     return (
         <section className='show_desktop'>
             <DesktopHeader />
