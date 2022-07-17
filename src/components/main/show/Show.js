@@ -46,7 +46,7 @@ const Show = () => {
         <section className='show'>
             {loading 
                 ? null
-                : width < breakpoint ? <ShowMobile /> : <ShowDesktop />
+                : width < breakpoint ? <ShowMobile show={showData} /> : <ShowDesktop show={showData} />
             }
         </section>
     );
