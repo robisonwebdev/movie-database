@@ -4,7 +4,7 @@ import '../../../../styles/main/show/title/Title.css';
 const Title = ({ show }) => {
     const { first_air_date, name } = show;
 
-    const getAirFirstDate = () => {
+    const getFirstAirDate = () => {
         const getDate = new Date(first_air_date);
         const getYear = getDate.getUTCFullYear(getDate);
 
@@ -16,7 +16,7 @@ const Title = ({ show }) => {
     return (
         <section className='show_title'>
             <h3>{name}</h3>
-            <p>{getAirFirstDate()}</p>
+            <p>{getFirstAirDate()}</p>
         </section>
     );
 };
