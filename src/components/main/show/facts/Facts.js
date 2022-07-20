@@ -1,8 +1,9 @@
 import React from 'react';
+import '../../../../styles/main/show/facts/Facts.css';
 
 const Facts = () => {
     return (
-        <section>Facts</section>
+        <section className='show_facts'>Facts</section>
     );
 };
 
