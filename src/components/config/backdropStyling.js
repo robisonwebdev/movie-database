@@ -1,5 +1,5 @@
-const headerBackground = (movie) => {
-    const { backdrop_path } = movie;
+const headerBackground = (media) => {
+    const { backdrop_path } = media;
     const backgroundURL = `http://image.tmdb.org/t/p/original/${backdrop_path}`;
     const styling = {
         background: `linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9)), url(${backgroundURL})`,
