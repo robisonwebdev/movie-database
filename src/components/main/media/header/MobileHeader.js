@@ -1,5 +1,6 @@
 import React from 'react';
 import Facts from './Facts';
+import Overview from './Overview';
 import Tagline from './Tagline';
 import Title from './Title';
 import backdropStyling from '../../../config/backdropStyling';
@@ -12,6 +13,7 @@ const MobileHeader = ({ media }) => {
             <Title />
             <Facts />
             <Tagline />
+            <Overview />
         </section>
     );
 };
