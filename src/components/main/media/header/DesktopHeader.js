@@ -1,6 +1,7 @@
 import React from 'react';
 import Facts from './Facts';
 import Poster from './Poster';
+import Tagline from './Tagline';
 import Title from './Title';
 import backdropStyling from '../../../config/backdropStyling';
 import '../../../../styles/main/media/header/DesktopHeader.css';
@@ -17,6 +18,7 @@ const DesktopHeader = ({ media }) => {
                         <Title />
                         <Facts />
                     </div>
+                    <Tagline />
                 </section>
             </div>
         </section>
