@@ -1,5 +1,6 @@
 import React from 'react';
 import Facts from './Facts';
+import Overview from './Overview';
 import Poster from './Poster';
 import Tagline from './Tagline';
 import Title from './Title';
@@ -19,6 +20,7 @@ const DesktopHeader = ({ media }) => {
                         <Facts />
                     </div>
                     <Tagline />
+                    <Overview />
                 </section>
             </div>
         </section>
