@@ -5,7 +5,7 @@ import '../../../styles/main/movie/MovieMobile.css';
 const MovieMobile = ({ movie }) => {
     return (
         <section className='movie_mobile'>
-            <MobileHeader movie={movie} />
+            <MobileHeader media={movie} />
             <section className='movie_mobile_main'>Main</section>
         </section>
     );
