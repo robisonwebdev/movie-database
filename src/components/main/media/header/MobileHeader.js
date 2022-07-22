@@ -10,7 +10,7 @@ import '../../../../styles/main/media/header/MobileHeader.css';
 const MobileHeader = ({ media }) => {
     return (
         <section className='media_mobile_header'>
-            <div className='media_backdrop' style={backdropStyling()}>
+            <div className='media_backdrop' style={backdropStyling(media)}>
                 <Poster />
             </div>
             <Title />
