@@ -1,0 +1,14 @@
+.media_desktop_header {
+    height: auto;
+    width: 100%;
+}
+
+.media_desktop_container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+    color: aliceblue; /* TEMP */
+    height: auto;
+    width: 100%;
+}
