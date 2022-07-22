@@ -6,3 +6,8 @@
     height: auto;
     width: 100%;
 }
+
+.media_mobile_backdrop {
+    height: 250px;
+    width: 100%;
+}
