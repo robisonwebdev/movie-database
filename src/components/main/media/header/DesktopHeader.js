@@ -10,7 +10,7 @@ import '../../../../styles/main/media/header/DesktopHeader.css';
 const DesktopHeader = ({ media }) => {
     return (
         <section className='media_desktop_header' style={backdropStyling(media)}>
-            <div>
+            <div className='media_desktop_container'>
                 <section className='media_header_left'>
                     <Poster />
                 </section>
