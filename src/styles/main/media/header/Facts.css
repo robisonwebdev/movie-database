@@ -16,3 +16,12 @@
     height: auto;
     width: 100%;
 }
+
+.lower_facts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: auto;
+    width: 100%;
+}
