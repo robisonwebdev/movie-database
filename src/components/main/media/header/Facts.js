@@ -11,8 +11,8 @@ const Facts = ({ media }) => {
     );
 };
 
-const DesktopLayout = () => {};
+const DesktopLayout = ({ media }) => {};
 
-const MobileLayout = () => {};
+const MobileLayout = ({ media }) => {};
 
 export default Facts;
