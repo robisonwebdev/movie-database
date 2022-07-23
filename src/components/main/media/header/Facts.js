@@ -5,9 +5,11 @@ import Rating from './Rating';
 import Runtime from './Runtime';
 import '../../../../styles/main/media/header/Facts.css';
 
-const Facts = ({ media }) => {
+const Facts = ({ isMobile, media }) => {
     return (
-        <section className='media_facts'>Facts</section>
+        <section className='media_facts'>
+            {isMobile === true ? <MobileLayout media={media} /> : <DesktopLayout media={media} />}
+        </section>
     );
 };
 
