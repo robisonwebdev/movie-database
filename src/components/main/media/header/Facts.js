@@ -11,7 +11,18 @@ const Facts = ({ media }) => {
     );
 };
 
-const DesktopLayout = ({ media }) => {};
+const DesktopLayout = ({ media }) => {
+    return (
+        <>
+            <Rating media={media} />
+            <MediaDate media={media} />
+            &#8226;
+            <Genres media={media} />
+            &#8226;
+            <Runtime media={media} />
+        </>
+    );
+};
 
 const MobileLayout = ({ media }) => {};
 
