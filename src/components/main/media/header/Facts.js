@@ -8,7 +8,7 @@ import '../../../../styles/main/media/header/Facts.css';
 const Facts = ({ isMobile, media }) => {
     return (
         <section className='media_facts'>
-            {isMobile === true ? <MobileLayout media={media} /> : <DesktopLayout media={media} />}
+            {isMobile ? <MobileLayout media={media} /> : <DesktopLayout media={media} />}
         </section>
     );
 };
