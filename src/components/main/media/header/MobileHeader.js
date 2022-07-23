@@ -10,11 +10,12 @@ import '../../../../styles/main/media/header/MobileHeader.css';
 const MobileHeader = ({ media }) => {
     return (
         <section className='media_mobile_header'>
+            {console.log('Mobile:', media)}
             <div className='media_mobile_backdrop' style={backdropStyling(media)}>
                 <Poster />
             </div>
             <Title />
-            <Facts />
+            <Facts isMobile={true} media={media} />
             <Tagline />
             <Overview />
         </section>
