@@ -1,0 +1,8 @@
+.media_facts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    height: auto;
+    width: 100%;
+}
