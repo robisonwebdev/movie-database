@@ -24,6 +24,20 @@ const DesktopLayout = ({ media }) => {
     );
 };
 
-const MobileLayout = ({ media }) => {};
+const MobileLayout = ({ media }) => {
+    return (
+        <>
+            <div className='upper_facts'>
+                <Rating media={media} />
+                <MediaDate media={media} />
+                &#8226;
+                <Runtime media={media} />
+            </div>
+            <div className='lower_facts'>
+                <Genres media={media} />
+            </div>
+        </>
+    );
+};
 
 export default Facts;
