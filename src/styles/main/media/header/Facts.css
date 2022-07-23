@@ -6,3 +6,13 @@
     height: auto;
     width: 100%;
 }
+
+.upper_facts {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+
+    height: auto;
+    width: 100%;
+}
