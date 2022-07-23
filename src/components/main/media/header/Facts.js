@@ -7,7 +7,7 @@ import '../../../../styles/main/media/header/Facts.css';
 
 const Facts = ({ media }) => {
     return (
-        <section>Facts</section>
+        <section className='media_facts'>Facts</section>
     );
 };
 
