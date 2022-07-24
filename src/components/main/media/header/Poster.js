@@ -1,8 +1,9 @@
 import React from 'react';
+import '../../../../styles/main/media/header/Poster.css';
 
 const Poster = () => {
     return (
-        <section>Poster</section>
+        <section className='media_poster'>Poster</section>
     );
 };
 
