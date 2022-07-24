@@ -1,8 +1,9 @@
 import React from 'react';
+import '../../../../styles/main/media/header/Genres.css';
 
 const Genres = () => {
     return (
-        <section>Genres</section>
+        <section className='media_genres'>Genres</section>
     );
 };
 
