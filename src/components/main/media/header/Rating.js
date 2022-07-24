@@ -1,8 +1,9 @@
 import React from 'react';
+import '../../../../styles/main/media/header/Rating.css';
 
 const Rating = () => {
     return (
-        <section>Rating</section>
+        <section className='media_rating'>Rating</section>
     );
 };
 
