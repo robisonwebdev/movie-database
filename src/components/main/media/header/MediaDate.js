@@ -1,8 +1,9 @@
 import React from 'react';
+import '../../../../styles/main/media/header/MediaDate.css';
 
 const MediaDate = () => {
     return (
-        <section>MediaDate</section>
+        <section className='media_date'>MediaDate</section>
     );
 };
 
