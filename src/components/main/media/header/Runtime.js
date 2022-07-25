@@ -1,8 +1,9 @@
 import React from 'react';
+import '../../../../styles/main/media/header/Runtime.css';
 
 const Runtime = () => {
     return (
-        <section>Runtime</section>
+        <section className='media_runtime'>Runtime</section>
     );
 };
 
