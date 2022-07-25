@@ -16,7 +16,7 @@ const MobileHeader = ({ media }) => {
             </div>
             <Title />
             <Facts isMobile={true} media={media} />
-            <Tagline />
+            <Tagline media={media} />
             <Overview />
         </section>
     );
