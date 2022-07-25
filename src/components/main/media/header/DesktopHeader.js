@@ -20,7 +20,7 @@ const DesktopHeader = ({ media }) => {
                         <Facts isMobile={false} media={media} />
                     </div>
                     <Tagline media={media} />
-                    <Overview />
+                    <Overview media={media} />
                 </section>
             </div>
         </section>
