@@ -1,8 +1,9 @@
 import React from 'react';
+import '../../../../styles/main/media/header/Title.css';
 
 const Title = () => {
     return (
-        <section>Title</section>
+        <section className='media_title'>Title</section>
     );
 };
 
