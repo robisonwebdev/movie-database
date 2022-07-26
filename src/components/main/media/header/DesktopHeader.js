@@ -16,7 +16,7 @@ const DesktopHeader = ({ media }) => {
                 </section>
                 <section className='media_header_right'>
                     <div className='media_header_title'>
-                        <Title />
+                        <Title media={media} />
                         <Facts isMobile={false} media={media} />
                     </div>
                     <Tagline media={media} />
