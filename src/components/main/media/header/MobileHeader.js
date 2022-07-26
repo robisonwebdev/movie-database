@@ -14,7 +14,7 @@ const MobileHeader = ({ media }) => {
             <div className='media_mobile_backdrop' style={backdropStyling(media)}>
                 <Poster />
             </div>
-            <Title />
+            <Title media={media} />
             <Facts isMobile={true} media={media} />
             <Tagline media={media} />
             <Overview media={media} />
