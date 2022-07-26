@@ -5,7 +5,9 @@ const Title = ({ media }) => {
     const { name, title } = media;
 
     return (
-        <section className='media_title'>Title</section>
+        <section className='media_title'>
+            <h3>{name || title}</h3>
+        </section>
     );
 };
 
