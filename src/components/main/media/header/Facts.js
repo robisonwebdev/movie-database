@@ -29,7 +29,6 @@ const MobileLayout = ({ media }) => {
         <>
             <div className='upper_facts'>
                 <Rating media={media} />
-                <MediaDate media={media} />
                 &#8226;
                 <Runtime media={media} />
             </div>
