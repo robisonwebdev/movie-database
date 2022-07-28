@@ -11,7 +11,7 @@ const MobileHeader = ({ media }) => {
     return (
         <section className='media_mobile_header'>
             <div className='media_mobile_backdrop' style={backdropStyling(media)}>
-                <Poster />
+                <Poster media={media} />
             </div>
             <Title media={media} />
             <Facts isMobile={true} media={media} />
