@@ -1,4 +1,18 @@
 .movie_mobile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+
+    height: auto;
+    width: 100%;
+}
+
+.movie_mobile_main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     height: auto;
     width: 100%;
 }
