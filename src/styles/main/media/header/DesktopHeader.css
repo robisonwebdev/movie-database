@@ -1,4 +1,7 @@
 .media_desktop_header {
+    display: flex;
+    justify-content: center;
+
     height: auto;
     width: 100%;
 }
@@ -9,6 +12,8 @@
     gap: 20px;
 
     color: aliceblue; /* TEMP */
+    padding: 0 40px;
     height: auto;
     width: 100%;
+    max-width: 1400px;
 }
