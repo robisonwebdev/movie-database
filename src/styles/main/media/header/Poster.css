@@ -13,3 +13,10 @@
 .media_poster > svg {
     display: none;
 }
+
+@media only screen and (min-width: 865px) {
+    .media_poster img {
+        height: 450px;
+        width: 300px;
+    }
+}
