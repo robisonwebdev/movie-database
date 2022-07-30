@@ -12,7 +12,7 @@ const DesktopHeader = ({ media }) => {
         <section className='media_desktop_header' style={backdropStyling(media)}>
             <div className='media_desktop_container'>
                 <section className='media_header_left'>
-                    <Poster />
+                    <Poster media={media} />
                 </section>
                 <section className='media_header_right'>
                     <div className='media_header_title'>
