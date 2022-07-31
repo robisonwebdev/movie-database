@@ -17,3 +17,13 @@
     width: 100%;
     max-width: 1400px;
 }
+
+.media_header_right {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+
+    height: auto;
+    width: 100%;
+}
