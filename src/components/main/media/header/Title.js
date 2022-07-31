@@ -15,7 +15,7 @@ const Title = ({ media }) => {
 
     return (
         <section className='media_title'>
-            <h3>{name || title}</h3>
+            <h2>{name || title}</h2>
             <p>{getMediaYear()}</p>
         </section>
     );
