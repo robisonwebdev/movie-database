@@ -18,7 +18,7 @@ const Genres = ({ media }) => {
 
     return (
         <div className='media_genres'>
-            {getGenres()}
+            <p>{getGenres()}</p>
         </div>
     );
 };
