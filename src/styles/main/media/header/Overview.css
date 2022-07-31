@@ -3,3 +3,9 @@
     height: auto;
     width: 100%;
 }
+
+@media only screen and (min-width: 865px) {
+    .media_overview {
+        padding: 0;
+    }
+}
