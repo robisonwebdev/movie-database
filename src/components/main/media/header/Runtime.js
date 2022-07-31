@@ -27,7 +27,7 @@ const Runtime = ({ media }) => {
 
     return (
         <div className='media_runtime'>
-            {getRuntime()}
+            <p>{getRuntime()}</p>
         </div>
     );
 };
