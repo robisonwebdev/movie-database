@@ -5,6 +5,7 @@ import '../../../../styles/main/search/pagination/ResultsPagination.css';
 const ResultsPagination = ({ count, page, setPage }) => {
     const handleChange = (event, value) => {
         setPage(value);
+        window.scroll(0,0);
     };
 
     return (
