@@ -1,12 +1,9 @@
 .media_genres {
-    padding: 0 20px;
     text-align: center;
     height: auto;
     width: auto;
 }
 
-@media only screen and (min-width: 865px) {
-    .media_genres {
-        padding: 0;        
-    }
-}
+/* @media only screen and (min-width: 865px) {
+
+} */
