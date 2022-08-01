@@ -13,7 +13,7 @@ const Show = () => {
     const [width, setWidth] = useState(window.innerWidth);
 
     const fetchData = useCallback(() => {
-        const show_API = ` https://api.themoviedb.org/3/tv/${showID}?api_key=9289aca3a6413b200619b263ac82e4c0&language=en-US&append_to_response=content_ratings`;
+        const show_API = ` https://api.themoviedb.org/3/tv/${showID}?api_key=9289aca3a6413b200619b263ac82e4c0&language=en-US&append_to_response=content_ratings,credits`;
 
         const getShow = axios.get(show_API);
 
