@@ -10,7 +10,7 @@ const MovieDesktop = ({ movie }) => {
            <DesktopHeader media={movie} />
            <section className='movie_desktop_main'>
                 <section className='desktop_main_left'>
-                    <Scroller content={movie.credits.cast} />
+                    <Scroller content={movie.credits.cast} show={10} />
                 </section>
                 <section className='desktop_main_right'></section>
            </section>
