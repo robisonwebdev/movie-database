@@ -3,7 +3,6 @@
     flex-direction: column;
     gap: 8px;
 
-    padding: 0 20px;
     height: auto;
     width: 100%;
 }
@@ -12,8 +11,6 @@
     font-size: 0.95rem;
 }
 
-@media only screen and (min-width: 865px) {
-    .media_overview {
-        padding: 0;
-    }
-}
+/* @media only screen and (min-width: 865px) {
+    
+} */
