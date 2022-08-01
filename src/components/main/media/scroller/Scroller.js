@@ -1,8 +1,9 @@
 import React from 'react';
+import '../../../../styles/main/media/scroller/Scroller.css';
 
 const Scroller = () => {
     return (
-        <section>Scroller</section>
+        <section className='media_scroller'>Scroller</section>
     );
 };
 
