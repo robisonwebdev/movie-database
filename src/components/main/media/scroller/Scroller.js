@@ -2,8 +2,8 @@ import React from 'react';
 import ScrollerCard from './ScrollerCard';
 import '../../../../styles/main/media/scroller/Scroller.css';
 
-const Scroller = ({ content, show, title }) => {
-    const slicedContent = content.slice(0, (show || 10));
+const Scroller = ({ content, slice, title }) => {
+    const slicedContent = content.slice(0, (slice || 10));
 
     const buildScrollerCards = slicedContent?.map(item => {
         return <ScrollerCard key={item.id} cardInfo={item} />
