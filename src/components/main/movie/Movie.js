@@ -13,7 +13,7 @@ const Movie = () => {
     const [width, setWidth] = useState(window.innerWidth);
 
     const fetchData = useCallback(() => {
-        const movie_API = `https://api.themoviedb.org/3/movie/${movieID}?api_key=9289aca3a6413b200619b263ac82e4c0&language=en-US&append_to_response=release_dates`;
+        const movie_API = `https://api.themoviedb.org/3/movie/${movieID}?api_key=9289aca3a6413b200619b263ac82e4c0&language=en-US&append_to_response=credits,release_dates`;
 
         const getMovie = axios.get(movie_API);
 
