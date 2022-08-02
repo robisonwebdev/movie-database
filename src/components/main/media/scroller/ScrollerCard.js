@@ -1,4 +1,5 @@
 import React from 'react';
+import PersonIcon from '@mui/icons-material/Person';
 import '../../../../styles/main/media/scroller/ScrollerCard.css';
 
 const ScrollerCard = ({ cardInfo }) => {
