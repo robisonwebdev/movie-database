@@ -27,7 +27,10 @@ const ScrollerCard = ({ cardInfo }) => {
 
     return (
         <section className='media_scroller_card'>
-            {getCardImage()}
+            <div className='scroller_card_image'>
+                {getCardImage()}
+            </div>
+            <div className='scroller_card_info'></div>            
         </section>
     );
 };
