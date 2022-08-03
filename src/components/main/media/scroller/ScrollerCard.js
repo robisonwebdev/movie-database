@@ -30,7 +30,10 @@ const ScrollerCard = ({ cardInfo }) => {
             <div className='scroller_card_image'>
                 {getCardImage()}
             </div>
-            <div className='scroller_card_info'></div>            
+            <div className='scroller_card_info'>
+                <h3>{getName()}</h3>
+                <p>{getCharacter()}</p>
+            </div>            
         </section>
     );
 };
