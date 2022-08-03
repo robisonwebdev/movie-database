@@ -13,6 +13,12 @@ const ScrollerCard = ({ cardInfo }) => {
         return <img src={imagePath} alt={name} />;
     };
 
+    const getCharacter = () => {
+        if (character === '' || character === null) return null;
+
+        return character;
+    };
+
     return (
         <section className='media_scroller_card'>
             {getCardImage()}
