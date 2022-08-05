@@ -5,6 +5,8 @@
 
 .movie_desktop_main {
     display: flex;
+    justify-content: space-between;
+    gap: 15px;
 
     padding: 0 40px;
     height: auto;
