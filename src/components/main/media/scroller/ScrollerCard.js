@@ -30,7 +30,7 @@ const ScrollerCard = ({ cardInfo }) => {
     return (
         <section className='media_scroller_card'>
             <div className='scroller_card_image'>
-                {getCardImage()}
+                <Link to={linkTo}>{getCardImage()}</Link>
             </div>
             <div className='scroller_card_info'>
                 <Link to={linkTo}>
