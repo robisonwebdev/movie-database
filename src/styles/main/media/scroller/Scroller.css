@@ -1,0 +1,8 @@
+.media_scroller {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    height: auto;
+    width: 100%;
+}
