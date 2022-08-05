@@ -1,9 +1,11 @@
 import React from 'react';
 import PersonIcon from '@mui/icons-material/Person';
+import { Link } from 'react-router-dom';
 import '../../../../styles/main/media/scroller/ScrollerCard.css';
 
 const ScrollerCard = ({ cardInfo }) => {
     const { character, id, name, profile_path } = cardInfo;
+    const linkTo = `/person/${id}`;
 
     const getCardImage = () => {
         const imagePath = `https://www.themoviedb.org/t/p/w138_and_h175_face/${profile_path}`;
@@ -31,7 +33,9 @@ const ScrollerCard = ({ cardInfo }) => {
                 {getCardImage()}
             </div>
             <div className='scroller_card_info'>
-                <h3>{getName()}</h3>
+                <Link to={linkTo}>
+                    <h3>{getName()}</h3>
+                </Link>
                 <p>{getCharacter()}</p>
             </div>            
         </section>
