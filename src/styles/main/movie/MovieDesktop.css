@@ -12,3 +12,19 @@
     height: auto;
     width: 100%;
 }
+
+.desktop_main_left {
+    display: flex;
+    flex-direction: column;
+
+    height: auto;
+    width: 100%;
+}
+
+.desktop_main_right {
+    display: flex;
+    flex-direction: column;
+
+    height: auto;
+    width: 400px;
+}
