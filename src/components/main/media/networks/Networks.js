@@ -1,8 +1,9 @@
 import React from 'react';
+import '../../../../styles/main/media/networks/Networks.css';
 
 const Networks = () => {
     return (
-        <section>Networks</section>
+        <section className='media_networks'>Networks</section>
     );
 };
 
