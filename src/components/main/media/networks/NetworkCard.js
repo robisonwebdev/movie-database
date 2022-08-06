@@ -1,8 +1,9 @@
 import React from 'react';
+import '../../../../styles/main/media/networks/NetworkCard.css';
 
 const NetworkCard = () => {
     return (
-        <div>NetworkCard</div>
+        <div className='network_card'>NetworkCard</div>
     );
 };
 
