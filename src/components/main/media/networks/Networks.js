@@ -2,7 +2,7 @@ import React from 'react';
 import '../../../../styles/main/media/networks/Networks.css';
 
 const Networks = ({ media }) => {
-    
+    const { networks } = media;
 
     return (
         <section className='media_networks'>
