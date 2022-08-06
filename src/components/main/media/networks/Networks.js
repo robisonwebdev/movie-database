@@ -13,7 +13,7 @@ const Networks = ({ media }) => {
         <section className='media_networks'>
             <h3>Networks</h3>
             <div className='networks_list'>
-                {buildNetworksList}
+                {networks.length === 0 ? 'No networks available.' : buildNetworksList}
             </div>
         </section>
     );
