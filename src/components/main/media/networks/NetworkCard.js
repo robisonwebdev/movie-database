@@ -1,7 +1,9 @@
 import React from 'react';
 import '../../../../styles/main/media/networks/NetworkCard.css';
 
-const NetworkCard = () => {
+const NetworkCard = ({ network }) => {
+    const { logo_path, name } = network;
+
     return (
         <div className='network_card'>NetworkCard</div>
     );
