@@ -8,7 +8,7 @@ const Rating = ({ media }) => {
     const getContentRating = useCallback(() => {
         const USRating = content_ratings.results.filter(obj => obj['iso_3166_1'] === 'US');
 
-        if (USRating.lenght === 0) return null;
+        if (USRating.lenght === 0 || USRating[0] === undefined) return null;
 
         setRating(USRating[0]['rating']);
     }, [content_ratings]);
@@ -33,6 +33,7 @@ const Rating = ({ media }) => {
 
     return (
         <div className='media_rating'>
+            {console.log(media)}
             <p>
                 {rating}
             </p>
